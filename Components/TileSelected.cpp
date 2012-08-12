@@ -1,4 +1,5 @@
 #include "TileSelected.h"
+using namespace Component;
 
 TileSelected::TileSelected()
 {

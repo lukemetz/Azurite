@@ -2,10 +2,12 @@
 
 #include <stdio.h>
 #include <sapling/EntitySystem.h>
-
-struct TileSelected: public Component::Component
+namespace Component
 {
-  int selected;
-  int prevSelected;
-  TileSelected();
+  struct TileSelected: public Component::Component
+  {
+    int selected;
+    int prevSelected;
+    TileSelected();
+  };
 };

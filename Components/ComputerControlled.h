@@ -1,8 +1,10 @@
 #pragma once
 #include <sapling/EntitySystem.h>
-
-struct ComputerControlled: public Component::Component
+namespace Component
 {
-  float prevTurnStartTime;
-  ComputerControlled();
+  struct ComputerControlled: public Component
+  {
+    float prevTurnStartTime;
+    ComputerControlled();
+  };
 };

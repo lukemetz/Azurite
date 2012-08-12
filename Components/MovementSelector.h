@@ -1,12 +1,15 @@
 #include <sapling/EntitySystem.h>
 
-struct MovementPath
+namespace Component
 {
-  std::vector<Entity *> path;
-  float time;
-};
+  struct MovementPath
+  {
+    std::vector<Entity *> path;
+    float time;
+  };
 
-struct MovementSelector: public Component::Component
-{
-  std::map<Entity *, MovementPath> possibleMoves;
+  struct MovementSelector: public Component
+  {
+    std::map<Entity *, MovementPath> possibleMoves;
+  };
 };

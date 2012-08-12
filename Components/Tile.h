@@ -2,17 +2,19 @@
 
 #include <stdio.h>
 #include <sapling/EntitySystem.h>
-
-enum TileTypes
+namespace Component
 {
-  kStone,
-  kWoods,
-  kWater
-};
+  enum TileTypes
+  {
+    kStone,
+    kWoods,
+    kWater
+  };
 
-struct Tile: public Component::Component
-{
-  std::vector<Entity *> neighbors;
-  int type;
-  Tile();
+  struct Tile: public Component::Component
+  {
+    std::vector<Entity *> neighbors;
+    int type;
+    Tile();
+  };
 };

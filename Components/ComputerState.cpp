@@ -1,4 +1,5 @@
 #include "ComputerState.h"
+using namespace Component;
 
 ComputerState::ComputerState()
 {

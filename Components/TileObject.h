@@ -1,6 +1,9 @@
 #include <sapling/EntitySystem.h>
-struct TileObject: public Component::Component
+namespace Component
 {
-  Entity *tile;
-  TileObject();
+  struct TileObject: public Component
+  {
+    Entity *tile;
+    TileObject();
+  };
 };

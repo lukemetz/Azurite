@@ -1,8 +1,10 @@
 #pragma once
 
 #include <sapling/EntitySystem.h>
-
-struct MovementPath;
+using namespace Component;
+namespace Component {
+  struct MovementPath;
+}
 
 class MovementSelectorSystem : public System
 {

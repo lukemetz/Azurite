@@ -1,8 +1,10 @@
 #include <sapling/EntitySystem.h>
-
-struct AnimationTimer: public Component::Component
+namespace Component
 {
-  float time;
-  bool isUpdating;
-  AnimationTimer();
-};
+  struct AnimationTimer: public Component::Component
+  {
+    float time;
+    bool isUpdating;
+    AnimationTimer();
+  };
+}

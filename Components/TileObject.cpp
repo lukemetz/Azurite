@@ -1,4 +1,5 @@
 #include "TileObject.h"
+using namespace Component;
 
 TileObject::TileObject()
 {

@@ -1,4 +1,5 @@
 #include "PlayerState.h"
+using namespace Component;
 
 PlayerState::PlayerState()
 {

@@ -1,7 +1,9 @@
 #pragma once
 #include <sapling/EntitySystem.h>
-
-struct PlayerControlled: public Component::Component
+namespace Component
 {
-  PlayerControlled();
+  struct PlayerControlled: public Component::Component
+  {
+    PlayerControlled();
+  };
 };

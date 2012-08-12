@@ -1,4 +1,5 @@
 #include "Unit.h"
+using namespace Component;
 
 Unit::Unit()
 {

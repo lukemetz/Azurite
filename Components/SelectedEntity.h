@@ -1,8 +1,10 @@
 #pragma once
 #include <sapling/EntitySystem.h>
-
-struct SelectedEntity: public Component::Component
+namespace Component
 {
-  Entity *entity;
-  SelectedEntity();
+  struct SelectedEntity: public Component::Component
+  {
+    Entity *entity;
+    SelectedEntity();
+  };
 };
