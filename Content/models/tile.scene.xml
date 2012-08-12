@@ -1,0 +1,4 @@
+<Model name="tile" geometry="models/tile.geo">
+
+	<Mesh name="Cube" material="models/Material.material.xml" batchStart="0" batchCount="84" vertRStart="0" vertREnd="35" />
+</Model>
