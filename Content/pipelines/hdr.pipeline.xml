@@ -3,8 +3,7 @@
 	<Setup>
 		<RenderTarget id="HDRBUF" depthBuf="true" numColBufs="1" format="RGBA16F" scale="1.0" maxSamples="16" />
 		<RenderTarget id="BLURBUF1" depthBuf="false" numColBufs="1" format="RGBA8" scale="0.25" />
-    <RenderTarget id="BLURBUF2" depthBuf="false" numColBufs="1" format="RGBA8" scale="0.25" />
-    <RenderTarget id="OUTLINEBUF" depthBuf="true" numColBufs="1" format="RGBA16F" scale="1.0" />
+		<RenderTarget id="BLURBUF2" depthBuf="false" numColBufs="1" format="RGBA8" scale="0.25" />
 	</Setup>
 
 	<CommandQueue>
@@ -17,7 +16,7 @@
 
 		<Stage id="Lighting">
 			<DoForwardLightLoop class="~Translucent" />
-		</Stage>
+    </Stage>
 
 		<Stage id="Translucent">
 			<DrawGeometry context="TRANSLUCENT" class="Translucent" order="BACK_TO_FRONT" />
@@ -51,17 +50,10 @@
 			<UnbindBuffers />
 		</Stage>
 
-    <Stage id="Outline">
-      <SwitchTarget target="OUTLINEBUF" />
-			<ClearTarget depthBuf="true" colBuf0="true" />
-      <DrawQuad material="pipelines/outline.material.xml" context="OUTLINE" />
-    </Stage>
-
 		<Stage id="Combination">
 			<SwitchTarget target="" />
 			<BindBuffer sampler="buf0" sourceRT="HDRBUF" bufIndex="0" />
-      <BindBuffer sampler="buf1" sourceRT="BLURBUF1" bufIndex="0" />
-      <BindBuffer sampler="buf2" sourceRT="OUTLINEBUF" bufIndex="0" />
+			<BindBuffer sampler="buf1" sourceRT="BLURBUF1" bufIndex="0" />
 			<DrawQuad material="pipelines/postHDR.material.xml" context="FINALPASS" />
 			<UnbindBuffers />
 		</Stage>

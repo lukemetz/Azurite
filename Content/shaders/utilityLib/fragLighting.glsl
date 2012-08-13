@@ -57,7 +57,7 @@ vec3 calcPhongSpotLight( const vec3 pos, const vec3 normal, const vec3 albedo, c
 	// Blinn-Phong specular with energy conservation
 	vec3 view = normalize( viewerPos - pos );
 	vec3 halfVec = normalize( light + view );
-	float specExp = exp2( 10 * gloss + 1 );
+	float specExp = exp2( 10.0 * gloss + 1.0 );
 	vec3 specular = specColor * pow( max( dot( halfVec, normal ), 0.0 ), specExp );
 	specular *= (specExp * 0.125 + 0.25);  // Normalization factor (n+2)/8
 	
