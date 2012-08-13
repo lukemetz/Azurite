@@ -11,6 +11,11 @@ sampler2D buf1 = sampler_state
 	Address = Clamp;
 };
 
+sampler2D buf2 = sampler_state
+{
+  Address = Clamp;
+};
+
 // Uniforms
 float hdrExposure = 2.0;       // Exposure (higher values make scene brighter)
 float hdrBrightThres = 0.6;    // Brightpass threshold (intensity where blooming begins)
@@ -112,7 +117,7 @@ void main( void )
 [[FS_FINALPASS]]
 // =================================================================================================
 
-uniform sampler2D buf0, buf1;
+uniform sampler2D buf0, buf1, buf2;
 uniform vec2 frameBufSize;
 uniform float hdrExposure;
 varying vec2 texCoords;
@@ -121,9 +126,9 @@ void main( void )
 {
 	vec4 col0 = texture2D( buf0, texCoords );	// HDR color
 	vec4 col1 = texture2D( buf1, texCoords );	// Bloom
-	
+	vec4 col2 = texture2D( buf2, texCoords ); // Outline
 	// Tonemap (using photographic exposure mapping)
 	vec4 col = 1.0 - exp2( -hdrExposure * col0 );
 	
-	gl_FragColor = col + col1;
+	gl_FragColor = col + col1 + col2*col2.w;
 }
