@@ -18,6 +18,12 @@ sampler2D buf2 = sampler_state
   Filter = None;
 };
 
+sampler2D buf3 = sampler_state
+{
+  Address = Clamp;
+  Filter = None;
+};
+
 float4 color = {0, 0, 0, 1};
 
 // Uniforms
@@ -48,8 +54,6 @@ context FXAA
 }
 
 [[FS_OUTLINE]]
-uniform vec4 color;
-uniform float thickness;
 uniform sampler2D depthBuf;
 varying vec2 texCoords;
 uniform vec2 frameBufSize;
@@ -86,7 +90,7 @@ void main( void )
 
 [[FS_FINALPASS]]
 
-uniform sampler2D buf0, buf1, buf2;
+uniform sampler2D buf0, buf1, buf2, buf3;
 uniform vec2 frameBufSize;
 uniform float hdrExposure;
 varying vec2 texCoords;
@@ -95,10 +99,11 @@ void main( void )
 {
 	vec4 col0 = texture2D( buf0, texCoords );	// HDR color
 	vec4 col1 = texture2D( buf1, texCoords );	// Bloom
-  vec4 col2 = texture2D( buf2, texCoords ); // Outline	
+  vec4 col2 = texture2D( buf2, texCoords ); // Outline
+  vec4 col3 = texture2D( buf3, texCoords );
 	// Tonemap (using photographic exposure mapping)
 	vec4 col = 1.0 - exp2( -hdrExposure * col0 );
-	gl_FragColor = col2*(col+col1);
+	gl_FragColor = col3*col2*(col+col1);
 }
 
 [[FS_FXAA]]
