@@ -6,6 +6,7 @@
     <RenderTarget id="BLURBUF1" depthBuf="false" numColBufs="1" format="RGBA8" scale="0.25"/>
 		<RenderTarget id="BLURBUF2" depthBuf="false" numColBufs="1" format="RGBA8" scale="0.25"/>
     <RenderTarget id="FINALIMAGE" depthBuf="false" numColBufs="1" format="RGBA16F" scale="1.0"/>
+    <RenderTarget id="OUTLINE" depthBuf="true" numColBufs="1" format="RGBA16F" scale="1.0"/>
   </Setup>
 
 	<CommandQueue>
@@ -61,12 +62,22 @@
 			<UnbindBuffers />
     </Stage>
 
+    <Stage id="Outline">
+      <SwitchTarget target="OUTLINE" />
+			<BindBuffer sampler="depthBuf" sourceRT="GBUFFER" bufIndex="32" />
+			<DrawQuad material="materials/light.material.xml" context="COPY_DEPTH" />
+			<UnbindBuffers />
+      <DrawQuad material="pipelines/outline.material.xml" context="OUTLINE" />
+      <UnbindBuffers />
+    </Stage>
+
     <Stage id="Combination">
       <SwitchTarget target="FINALIMAGE" />
 			<ClearTarget colBuf0="true" />
 
       <BindBuffer sampler="buf0" sourceRT="MBUFF" bufIndex="0" />
       <BindBuffer sampler="buf1" sourceRT="BLURBUF1" bufIndex="0" />
+      <BindBuffer sampler="buf2" sourceRT="OUTLINE" bufIndex="0" />
 			<DrawQuad material="pipelines/outline.material.xml" context="FINALPASS" />
 			<UnbindBuffers />
 		</Stage>
