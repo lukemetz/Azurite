@@ -58,14 +58,18 @@ void main( void )
 {
   //Using a 3x3 laplacian kernel
   float width = 2.5;
-  vec4 color = 4 * texture2D(depthBuf, texCoords);
+  vec4 color = 8 * texture2D(depthBuf, texCoords);
   color -= texture2D(depthBuf, texCoords+vec2(-width, 0.0)/frameBufSize);
   color -= texture2D(depthBuf, texCoords+vec2(width, 0.0)/frameBufSize);
   color -= texture2D(depthBuf, texCoords+vec2(0.0, -width)/frameBufSize);
   color -= texture2D(depthBuf, texCoords+vec2(0.0, width)/frameBufSize);
+  color -= texture2D(depthBuf, texCoords+vec2(-width, -width)/frameBufSize);
+  color -= texture2D(depthBuf, texCoords+vec2(-width, width)/frameBufSize);
+  color -= texture2D(depthBuf, texCoords+vec2(width, -width)/frameBufSize);
+  color -= texture2D(depthBuf, texCoords+vec2(width, width)/frameBufSize);
+  
   color = 1-clamp(color*1000, 0, 1);
-  color.a = 1-color.x;
-  gl_FragColor = round(color);
+  gl_FragColor = color;
 }
 
 [[VS_FSQUAD]]
@@ -94,8 +98,7 @@ void main( void )
   vec4 col2 = texture2D( buf2, texCoords ); // Outline	
 	// Tonemap (using photographic exposure mapping)
 	vec4 col = 1.0 - exp2( -hdrExposure * col0 );
-	//gl_FragColor = col2;
-  gl_FragColor = min(col2, col + col1);
+	gl_FragColor = col2*(col+col1);
 }
 
 [[FS_FXAA]]
