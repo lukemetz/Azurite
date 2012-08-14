@@ -151,10 +151,13 @@ void main( void )
 		texture2D(buf0, texCoords.xy + dir * (0.0/3.0 - 0.5)).xyz +
 		texture2D(buf0, texCoords.xy + dir * (3.0/3.0 - 0.5)).xyz);
 	float lumaB = dot(rgbB, luma);
-
+  
+  vec4 outputCol;
 	if((lumaB < lumaMin) || (lumaB > lumaMax)){
-		gl_FragColor.xyz=rgbA;
+		outputCol.xyz=rgbA;
 	}else{
-		gl_FragColor.xyz=rgbB;
+		outputCol.xyz=rgbB;
 	}
+  //Gamma correct
+  gl_FragColor = pow(outputCol, 1.0/1.7);
 }
