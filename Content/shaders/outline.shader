@@ -1,12 +1,17 @@
 [[FX]]
-
 sampler2D buf0 = sampler_state
 {
   Address = Clamp;
+  Filter = None;
 };
 
 float thickness = 1.0;
 float4 color = {0, 0, 0, 1};
+
+// Uniforms
+float hdrExposure = 2.0;       // Exposure (higher values make scene brighter)
+float hdrBrightThres = 0.6;    // Brightpass threshold (intensity where blooming begins)
+float hdrBrightOffset = 0.06;  // Brightpass offset (smaller values produce stronger blooming)
 
 context OUTLINE
 {
@@ -16,9 +21,26 @@ context OUTLINE
   ZWriteEnable = false;
 }
 
+context FINALPASS
+{
+	VertexShader = compile GLSL VS_FSQUAD;
+	PixelShader = compile GLSL FS_FINALPASS;
+	
+	ZWriteEnable = false;
+}
+
+context FXAA
+{
+  VertexShader = compile GLSL VS_FSQUAD;
+  PixelShader = compile GLSL FS_FXAA;
+}
+
+[[FS_OUTLINE]]
+uniform sampler2D buf0;
+uniform vec4 color;
+uniform float thickness;
 
 [[VS_FSQUAD]]
-// =================================================================================================
 
 uniform mat4 projMat;
 attribute vec3 vertPos;
@@ -30,15 +52,78 @@ void main( void )
 	gl_Position = projMat * vec4( vertPos, 1 );
 }
 
-[[FS_OUTLINE]]
-uniform sampler2D buf0;
-uniform vec4 color;
-uniform float thickness;
+[[FS_FINALPASS]]
+
+uniform sampler2D buf0, buf1;
+uniform vec2 frameBufSize;
+uniform float hdrExposure;
 varying vec2 texCoords;
 
-void main ( void )
+void main( void )
 {
-  vec4 color = {1,1,1,.3};
-  gl_FragColor = color;
+	vec4 col0 = texture2D( buf0, texCoords );	// HDR color
+	vec4 col1 = texture2D( buf1, texCoords );	// Bloom
+	
+	// Tonemap (using photographic exposure mapping)
+	vec4 col = 1.0 - exp2( -hdrExposure * col0 );
+	
+	gl_FragColor = col + col1;
 }
 
+[[FS_FXAA]]
+//Thanks http://horde3d.org/wiki/index.php5?title=Shading_Technique_-_FXAA
+uniform sampler2D buf0, buf1;
+uniform vec2 frameBufSize;
+uniform float hdrExposure;
+varying vec2 texCoords;
+
+void main( void )
+{
+	float FXAA_SPAN_MAX = 8.0;
+	float FXAA_REDUCE_MUL = 1.0/8.0;
+	float FXAA_REDUCE_MIN = 1.0/128.0;
+
+	vec3 rgbNW=texture2D(buf0,texCoords+(vec2(-1.0,-1.0)/frameBufSize)).xyz;
+	vec3 rgbNE=texture2D(buf0,texCoords+(vec2(1.0,-1.0)/frameBufSize)).xyz;
+	vec3 rgbSW=texture2D(buf0,texCoords+(vec2(-1.0,1.0)/frameBufSize)).xyz;
+	vec3 rgbSE=texture2D(buf0,texCoords+(vec2(1.0,1.0)/frameBufSize)).xyz;
+	vec3 rgbM=texture2D(buf0,texCoords).xyz;
+	
+	vec3 luma=vec3(0.299, 0.587, 0.114);
+	float lumaNW = dot(rgbNW, luma);
+	float lumaNE = dot(rgbNE, luma);
+	float lumaSW = dot(rgbSW, luma);
+	float lumaSE = dot(rgbSE, luma);
+	float lumaM  = dot(rgbM,  luma);
+	
+	float lumaMin = min(lumaM, min(min(lumaNW, lumaNE), min(lumaSW, lumaSE)));
+	float lumaMax = max(lumaM, max(max(lumaNW, lumaNE), max(lumaSW, lumaSE)));
+	
+	vec2 dir;
+	dir.x = -((lumaNW + lumaNE) - (lumaSW + lumaSE));
+	dir.y =  ((lumaNW + lumaSW) - (lumaNE + lumaSE));
+	
+	float dirReduce = max(
+		(lumaNW + lumaNE + lumaSW + lumaSE) * (0.25 * FXAA_REDUCE_MUL),
+		FXAA_REDUCE_MIN);
+	  
+	float rcpDirMin = 1.0/(min(abs(dir.x), abs(dir.y)) + dirReduce);
+	
+	dir = min(vec2( FXAA_SPAN_MAX,  FXAA_SPAN_MAX),
+		  max(vec2(-FXAA_SPAN_MAX, -FXAA_SPAN_MAX),
+		  dir * rcpDirMin)) / frameBufSize;
+		
+	vec3 rgbA = (1.0/2.0) * (
+		texture2D(buf0, texCoords.xy + dir * (1.0/3.0 - 0.5)).xyz +
+		texture2D(buf0, texCoords.xy + dir * (2.0/3.0 - 0.5)).xyz);
+	vec3 rgbB = rgbA * (1.0/2.0) + (1.0/4.0) * (
+		texture2D(buf0, texCoords.xy + dir * (0.0/3.0 - 0.5)).xyz +
+		texture2D(buf0, texCoords.xy + dir * (3.0/3.0 - 0.5)).xyz);
+	float lumaB = dot(rgbB, luma);
+
+	if((lumaB < lumaMin) || (lumaB > lumaMax)){
+		gl_FragColor.xyz=rgbA;
+	}else{
+		gl_FragColor.xyz=rgbB;
+	}
+}
