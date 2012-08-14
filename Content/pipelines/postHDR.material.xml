@@ -3,7 +3,7 @@
 
 	<Uniform name="hdrExposure" a="2.0" />
 	<Uniform name="hdrBrightThres" a="0.6" />
-	<Uniform name="hdrBrightOffset" a="0.02" />
+	<Uniform name="hdrBrightOffset" a="0.05" />
 
 	<Uniform name="blurParams" a="0.0" />
 </Material>
