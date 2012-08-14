@@ -68,7 +68,7 @@ void main( void )
   color -= texture2D(depthBuf, texCoords+vec2(width, -width)/frameBufSize);
   color -= texture2D(depthBuf, texCoords+vec2(width, width)/frameBufSize);
   
-  color = 1-clamp(color*1000, 0, 1);
+  color = 1-clamp(-1*color*400, 0, 1);
   gl_FragColor = color;
 }
 
