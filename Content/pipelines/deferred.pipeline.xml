@@ -90,8 +90,8 @@
 
       <BindBuffer sampler="buf0" sourceRT="MBUFF" bufIndex="0" />
       <BindBuffer sampler="buf1" sourceRT="BLURBUF1" bufIndex="0" />
-      <BindBuffer sampler="buf2" sourceRT="SSAOBUF" bufIndex="0" />
-      <BindBuffer sampler="buf3" sourceRT="OUTLINE" bufIndex="0" />
+      <BindBuffer sampler="buf2" sourceRT="OUTLINE" bufIndex="0" />
+      <BindBuffer sampler="buf3" sourceRT="SSAOBUF" bufIndex="0" />
 			<DrawQuad material="pipelines/outline.material.xml" context="FINALPASS" />
 			<UnbindBuffers />
 		</Stage>

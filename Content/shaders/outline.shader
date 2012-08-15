@@ -100,7 +100,13 @@ void main( void )
 	vec4 col0 = texture2D( buf0, texCoords );	// HDR color
 	vec4 col1 = texture2D( buf1, texCoords );	// Bloom
   vec4 col2 = texture2D( buf2, texCoords ); // Outline
-  vec4 col3 = texture2D( buf3, texCoords );
+  
+  float radius = 1.5/frameBufSize;
+  vec4 col3 = texture2D( buf3, texCoords + vec2(radius, 0) )*.25; // SSAO
+  col3 += texture2D( buf3, texCoords + vec2(-radius, 0) )*.25; // SSAO
+  col3 += texture2D( buf3, texCoords + vec2(0, radius) )*.25; // SSAO
+  col3 += texture2D( buf3, texCoords + vec2(0, -radius) )*.25; // SSAO
+
 	// Tonemap (using photographic exposure mapping)
 	vec4 col = 1.0 - exp2( -hdrExposure * col0 );
 	gl_FragColor = col3*col2*(col+col1);
