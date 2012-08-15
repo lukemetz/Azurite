@@ -79,11 +79,6 @@
       <DrawQuad material="pipelines/ssao.material.xml" context="SSAO"/>
     </Stage>
 
-    <Stage id="Debug">
-      <SwichTarget="OUTLINE"/>
-      <clearTarget colBuf0="true" />
-    </Stage>
-
     <Stage id="Combination">
       <SwitchTarget target="FINALIMAGE" />
 			<ClearTarget colBuf0="true" />
