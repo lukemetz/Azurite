@@ -3,8 +3,8 @@
 	<Setup>
     <RenderTarget id="GBUFFER" depthBuf="true" numColBufs="4" format="RGBA16F" scale="1.0"/>
     <RenderTarget id="MBUFF" depthBuf="true" numColBufs="1" format="RGBA16F" scale="1.0"/>
-    <RenderTarget id="BLURBUF1" depthBuf="false" numColBufs="1" format="RGBA8" scale="0.25"/>
-		<RenderTarget id="BLURBUF2" depthBuf="false" numColBufs="1" format="RGBA8" scale="0.25"/>
+    <RenderTarget id="BLURBUF1" depthBuf="false" numColBufs="1" format="RGBA8" scale="0.5"/>
+		<RenderTarget id="BLURBUF2" depthBuf="false" numColBufs="1" format="RGBA8" scale="0.5"/>
     <RenderTarget id="FINALIMAGE" depthBuf="false" numColBufs="1" format="RGBA16F" scale="1.0"/>
     <RenderTarget id="OUTLINE" depthBuf="false" numColBufs="1" format="RGBA8" scale="1.0"/>
     <RenderTarget id="SSAOBUF" depthBuf="false" numColBufs="1" format="RGBA8" scale=".5" />

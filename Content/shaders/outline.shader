@@ -176,5 +176,5 @@ void main( void )
 		outputCol.xyz=rgbB;
 	}
   //Gamma correct
-  gl_FragColor = pow(outputCol, 1.0/1.7);
+  gl_FragColor = pow(outputCol, 1.0/1.2);
 }
