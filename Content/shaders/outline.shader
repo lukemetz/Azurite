@@ -88,8 +88,8 @@ void main( void )
 	gl_Position = projMat * vec4( vertPos, 1 );
 }
 
-[[FS_FINALPASS]]
 
+[[FS_FINALPASS]]
 uniform sampler2D buf0, buf1, buf2, buf3;
 uniform vec2 frameBufSize;
 uniform float hdrExposure;
@@ -101,19 +101,7 @@ void main( void )
 	vec4 col1 = texture2D( buf1, texCoords );	// Bloom
   vec4 col2 = texture2D( buf2, texCoords ); // Outline
   
-  float radius = 1.5/frameBufSize;
-  float mult = 1.0/16.0;
-  
-  vec4 col3 = texture2D( buf3, texCoords)*4*mult;
-  col3 += texture2D( buf3, texCoords + vec2(radius*2, 0) )*2*mult; // SSAO
-  col3 += texture2D( buf3, texCoords + vec2(-radius*2, 0) )*2*mult; // SSAO
-  col3 += texture2D( buf3, texCoords + vec2(0, radius*2) )*2*mult; // SSAO
-  col3 += texture2D( buf3, texCoords + vec2(0, -radius*2) )*2*mult; // SSAO
-  col3 += texture2D( buf3, texCoords + vec2(-radius, radius) )*mult; // SSAO
-  col3 += texture2D( buf3, texCoords + vec2(-radius, -radius) )*mult; // SSAO
-  col3 += texture2D( buf3, texCoords + vec2(radius, radius) )*mult; // SSAO
-  col3 += texture2D( buf3, texCoords + vec2(radius, -radius) )*mult; // SSAO
-	// Tonemap (using photographic exposure mapping)
+  vec4 col3 = texture2D( buf3, texCoords);
 	vec4 col = 1.0 - exp2( -hdrExposure * col0 );
 	gl_FragColor = col3*col2*(col+col1);
 }

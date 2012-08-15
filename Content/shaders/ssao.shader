@@ -32,10 +32,28 @@ sampler2D randomBuf = sampler_state
   Texture = "textures/ssaoRandom.jpg";
 };
 
+sampler2D buf0 = sampler_state
+{
+  Address = Clamp;
+  Filter = None;
+};
+
 context SSAO
 {
   VertexShader = compile GLSL VS_FSQUAD;
   PixelShader = compile GLSL FS_SSAO;
+}
+
+context VERTICALBLUR
+{
+  VertexShader = compile GLSL VS_FSQUAD;
+  PixelShader = compile GLSL FS_VERTICALBLUR;
+}
+
+context HORIZONTALBLUR
+{
+  VertexShader = compile GLSL VS_FSQUAD;
+  PixelShader = compile GLSL FS_HORIZONTALBLUR;
 }
 
 [[VS_FSQUAD]]
@@ -111,3 +129,55 @@ void main( void )
   ao = 1-clamp(ao, 0, 1);
   gl_FragColor = vec4(ao, ao, ao, 1);//texture2D(depthBuf, texCoords);
 }
+
+[[FS_VERTICALBLUR]]
+uniform sampler2D buf0;
+uniform vec2 frameBufSize;
+varying vec2 texCoords;
+
+void main( void )
+{
+  float blur[7];
+  blur[0] = 1;
+  blur[1] = 1;
+  blur[2] = 2;
+  blur[3] = 3;
+  blur[4] = 2;
+  blur[5] = 1;
+  blur[6] = 1;
+
+  float dev = 11.0;
+  float width = 3.5;
+
+  vec4 outCol = vec4(0.0, 0.0, 0.0, 0.0);
+  for (int i = 0; i < 7; ++i ) {
+    outCol += texture2D(buf0, texCoords+vec2(0, width*(i-3))/frameBufSize)/dev*blur[i];
+  }
+  gl_FragColor = outCol;
+}
+
+[[FS_HORIZONTALBLUR]]
+uniform sampler2D buf0;
+uniform vec2 frameBufSize;
+varying vec2 texCoords;
+
+void main( void )
+{
+  float blur[7];
+  blur[0] = 1;
+  blur[1] = 1;
+  blur[2] = 2;
+  blur[3] = 3;
+  blur[4] = 2;
+  blur[5] = 1;
+  blur[6] = 1;
+  float dev = 11.0;
+  float width = 3.5;
+
+  vec4 outCol = vec4(0.0, 0.0, 0.0, 0.0);
+  for (int i = 0; i < 7; ++i ) {
+    outCol += texture2D(buf0, texCoords+vec2(width*(i-3), 0)/frameBufSize)/dev*blur[i];
+  }
+  gl_FragColor = outCol;
+}
+
