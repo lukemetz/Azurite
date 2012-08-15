@@ -9,6 +9,6 @@ TargetedRangedAttack::TargetedRangedAttack()
   startTime = 0;
   delay = 1;
   duration = 2;
-
+  hasBeenSelected = false;
   projectile = nullptr;
 }

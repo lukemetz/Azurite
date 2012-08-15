@@ -6,5 +6,6 @@ namespace Component
   {
     std::vector<Entity *> possibleTargets;
     bool hasBeenSelected;
+    TargetedRangedAttackSelector();
   };
 };

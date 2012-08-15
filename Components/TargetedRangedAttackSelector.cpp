@@ -2,7 +2,7 @@
 
 using namespace Component;
 
-TargetedRangedAttackSelector::TargetedRangedAttackSelector
+TargetedRangedAttackSelector::TargetedRangedAttackSelector()
 {
   hasBeenSelected = false;
 }
