@@ -28,7 +28,7 @@ sampler2D gbuf3 = sampler_state
 sampler2D randomBuf = sampler_state
 {
   Address = Wrap;
-  Filter = None;
+  Filter = Trilinear;
   Texture = "textures/ssaoRandom.jpg";
 };
 

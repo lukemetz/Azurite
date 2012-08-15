@@ -21,7 +21,7 @@ sampler2D buf2 = sampler_state
 sampler2D buf3 = sampler_state
 {
   Address = Clamp;
-  Filter = None;
+  Filter = Trilinear;
 };
 
 float4 color = {0, 0, 0, 1};
@@ -102,11 +102,17 @@ void main( void )
   vec4 col2 = texture2D( buf2, texCoords ); // Outline
   
   float radius = 1.5/frameBufSize;
-  vec4 col3 = texture2D( buf3, texCoords + vec2(radius, 0) )*.25; // SSAO
-  col3 += texture2D( buf3, texCoords + vec2(-radius, 0) )*.25; // SSAO
-  col3 += texture2D( buf3, texCoords + vec2(0, radius) )*.25; // SSAO
-  col3 += texture2D( buf3, texCoords + vec2(0, -radius) )*.25; // SSAO
-
+  float mult = 1.0/16.0;
+  
+  vec4 col3 = texture2D( buf3, texCoords)*4*mult;
+  col3 += texture2D( buf3, texCoords + vec2(radius*2, 0) )*2*mult; // SSAO
+  col3 += texture2D( buf3, texCoords + vec2(-radius*2, 0) )*2*mult; // SSAO
+  col3 += texture2D( buf3, texCoords + vec2(0, radius*2) )*2*mult; // SSAO
+  col3 += texture2D( buf3, texCoords + vec2(0, -radius*2) )*2*mult; // SSAO
+  col3 += texture2D( buf3, texCoords + vec2(-radius, radius) )*mult; // SSAO
+  col3 += texture2D( buf3, texCoords + vec2(-radius, -radius) )*mult; // SSAO
+  col3 += texture2D( buf3, texCoords + vec2(radius, radius) )*mult; // SSAO
+  col3 += texture2D( buf3, texCoords + vec2(radius, -radius) )*mult; // SSAO
 	// Tonemap (using photographic exposure mapping)
 	vec4 col = 1.0 - exp2( -hdrExposure * col0 );
 	gl_FragColor = col3*col2*(col+col1);
