@@ -12,7 +12,7 @@ solution "Azurite"
         includedirs{'/usr/local/include/'}
       end
       buildoptions{"-std=c++11 -Wall"} 
-      targetdir "
+      targetdir ""
       configuration "Debug"
          defines { "DEBUG" }
          flags { "Symbols" }
