@@ -30,12 +30,12 @@ void TargetedRangedAttackSelectorSystem::run(float dt)
   }
 }
 
-bool TargetedRangedAttackSystemSelector::unitCanAttack(Entity *entity) {
+bool TargetedRangedAttackSelectorSystem::unitCanAttack(Entity *entity) {
   auto unitSelected = entity->getAs<UnitSelected>();
   return unitSelected->selected && !unitSelected->usingAbility;
 }
 
-void TargetedRangedAttackSystemSelector::mouseSelect(Entity *entity)
+void TargetedRangedAttackSelectorSystem::mouseSelect(Entity *entity)
 {
   Application *app = Application::sharedInstance();
   Entity* cameraEntity = Helper::getCamera();

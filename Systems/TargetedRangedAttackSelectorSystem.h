@@ -1,6 +1,6 @@
 #include <sapling/EntitySystem.h>
 
-class TargetedRangedAttackSystem : public System
+class TargetedRangedAttackSelectorSystem : public System
 {
   public:
     void run(float dt);
