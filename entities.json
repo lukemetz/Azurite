@@ -17,10 +17,19 @@
     },
     "Light": {
       "radius": 100,
-      "color" : [0.3, 0.3, 0.3]
+      "color" : [0.4, 0.4, 0.4]
     }
   },
   "light2": {
+    "Transform": {
+      "pos": [10,5,10]
+    },
+    "Light": {
+      "radius": 100,
+      "color" : [0.4, 0.4, 0.4]
+    }
+  },
+  "light3": {
     "Transform": {
       "pos": [10,5,5]
     },

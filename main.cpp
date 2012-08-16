@@ -15,6 +15,7 @@
 #include "Components/MovementSelector.h"
 #include "Components/PlayerControlled.h"
 #include "Components/ComputerControlled.h"
+#include "Components/StoneTile.h"
 
 #include "Systems/MovementSystem.h"
 #include "Systems/AnimationTimerSystem.h"
@@ -23,6 +24,8 @@
 #include "Systems/PlayerControlSystem.h"
 #include "Systems/UnitSelectedSystem.h"
 #include "Systems/ComputerMovementSystem.h"
+
+#include "Systems/StoneTileSystem.h"
 
 #include <stdlib.h>
 
@@ -77,7 +80,8 @@ void engineInit() {
       entitySystem->createComponent<Transform>(tile);
       entitySystem->createComponent<Tile>(tile);
       entitySystem->createComponent<TileSelected>(tile);
-      tile->getAs<Mesh>()->path = "models/tile.scene.xml";
+      entitySystem->createComponent<StoneTile>(tile);
+      tile->getAs<Mesh>()->path = "models/tiles/stone/stone.scene.xml";
       tile->getAs<Transform>()->pos = Vec3f(i, (float)rand()/RAND_MAX/4.0f, j);
     }
   }
@@ -137,6 +141,10 @@ void engineInit() {
   entitySystem->addSystem<TileSelectedSystem>();
   entitySystem->addSystem<PlayerControlSystem>();
   entitySystem->addSystem<ComputerMovementSystem>();
+
+  //Tile systems
+  entitySystem->addSystem<StoneTileSystem>();
+
 }
 
 int main( int argc, char** argv )
