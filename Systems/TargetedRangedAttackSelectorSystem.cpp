@@ -8,7 +8,7 @@
 #include <sapling/Utils.h>
 using namespace Component;
 
-void TargetedRangedAttackSystem::run(float dt)
+void TargetedRangedAttackSelectorSystem::run(float dt)
 {
   auto entities = EntitySystem::sharedInstance()->getEntities<TargetedRangedAttack>();
   for (Entity *entity : entities) {
@@ -30,12 +30,12 @@ void TargetedRangedAttackSystem::run(float dt)
   }
 }
 
-bool TargetedRangedAttackSystem::unitCanAttack(Entity *entity) {
+bool TargetedRangedAttackSystemSelector::unitCanAttack(Entity *entity) {
   auto unitSelected = entity->getAs<UnitSelected>();
   return unitSelected->selected && !unitSelected->usingAbility;
 }
 
-void TargetedRangedAttackSystem::mouseSelect(Entity *entity)
+void TargetedRangedAttackSystemSelector::mouseSelect(Entity *entity)
 {
   Application *app = Application::sharedInstance();
   Entity* cameraEntity = Helper::getCamera();
