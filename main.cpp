@@ -81,9 +81,12 @@ void engineInit() {
       entitySystem->createComponent<Transform>(tile);
       entitySystem->createComponent<Tile>(tile);
       entitySystem->createComponent<TileSelected>(tile);
-      entitySystem->createComponent<StoneTile>(tile);
-      //entitySystem->createComponent<WoodsTile>(tile);
+      if(3*i-j*i+3*(j+1) > 10) {
 
+        entitySystem->createComponent<StoneTile>(tile);
+      } else {
+        entitySystem->createComponent<WoodsTile>(tile);
+      }
       //tile->getAs<Mesh>()->path = "models/tiles/stone/stone.scene.xml";
       //tile->getAs<Mesh>()->path = "models/tiles/woods/woods.scene.xml";
       tile->getAs<Transform>()->pos = Vec3f(i, (float)rand()/RAND_MAX/4.0f, j);
