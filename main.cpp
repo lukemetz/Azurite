@@ -82,13 +82,10 @@ void engineInit() {
       entitySystem->createComponent<Tile>(tile);
       entitySystem->createComponent<TileSelected>(tile);
       if(3*i-j*i+3*(j+1) > 10) {
-
         entitySystem->createComponent<StoneTile>(tile);
       } else {
         entitySystem->createComponent<WoodsTile>(tile);
       }
-      //tile->getAs<Mesh>()->path = "models/tiles/stone/stone.scene.xml";
-      //tile->getAs<Mesh>()->path = "models/tiles/woods/woods.scene.xml";
       tile->getAs<Transform>()->pos = Vec3f(i, (float)rand()/RAND_MAX/4.0f, j);
     }
   }
@@ -118,7 +115,7 @@ void engineInit() {
       }
     }
   }
-
+  //Add the player
   Entity * playerEntity = new Entity();
   entitySystem->createComponent<Input>(playerEntity);
   entitySystem->createComponent<SelectedEntity>(playerEntity);
@@ -135,6 +132,7 @@ void engineInit() {
   en->getAs<Transform>()->pos = entities[2][5]->getAs<Transform>()->pos;
   entitySystem->createComponent<ComputerControlled>(en);
 
+  //Init systems
   entitySystem->addSystem<RenderSystem>();
   entitySystem->addSystem<InputSystem>();
   entitySystem->addSystem<InputMoverSystem>();
@@ -158,7 +156,6 @@ void engineInit() {
 int main( int argc, char** argv )
 {
 	app = new Application( Application::extractAppPath( argv[0] ) );
-  //glfwDisable( GLFW_MOUSE_CURSOR );
   engineInit();
 
   app->resize(1024, 576);
