@@ -17,3 +17,6 @@ Makefile
 obj/
 tags
 *.html
+
+# blender related
+*.blend?
