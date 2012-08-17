@@ -11,7 +11,12 @@ void StoneTileSystem::run(float dt)
     auto stoneTile = entity->getAs<StoneTile>();
     if (!stoneTile->hasCustomized) {
       auto meshComponent = entity->getAs<Mesh>();
+      meshComponent->path = "models/tiles/stone/stone.scene.xml";
       H3DNode node = meshComponent->node;
+      if(node == 0) {
+        continue;
+      }
+
       int i = 0;
       H3DNode childNode = 0;
       while ( (childNode = h3dGetNodeChild(node, i)) ) {

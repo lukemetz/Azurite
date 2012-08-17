@@ -1,0 +1,10 @@
+<Model name="woods3" geometry="models/tiles/woods/woods3.geo">
+
+	<Mesh name="Base" material="models/tiles/woods/Base-material.material.xml" tx="0.5" ty="-0.5" tz="-0.5" sx="0.5" sy="0.5" sz="0.5" batchStart="0" batchCount="36" vertRStart="0" vertREnd="23" />
+	<Mesh name="Cube" material="models/tiles/woods/Trunk-material.material.xml" tx="0.5251" ty="0.440953" tz="-0.592244" rx="0" ry="-180" rz="-180" sx="-0.0722017" sy="0.455772" sz="0.0722017" batchStart="36" batchCount="36" vertRStart="24" vertREnd="47" />
+	<Mesh name="Cube_001" material="models/tiles/woods/TreeTop-material.material.xml" tx="0.535432" ty="0.809645" tz="-0.582286" sx="0.147259" sy="0.147259" sz="0.147259" batchStart="72" batchCount="36" vertRStart="48" vertREnd="71" />
+	<Mesh name="Cube_002" material="models/tiles/woods/TreeTop-material.material.xml" tx="0.644695" ty="0.682773" tz="-0.614775" sx="0.26007" sy="0.152824" sz="0.26007" batchStart="108" batchCount="36" vertRStart="72" vertREnd="95" />
+	<Mesh name="Cube_003" material="models/tiles/woods/TreeTop-material.material.xml" tx="0.255414" ty="0.595962" tz="-0.336826" sx="0.229795" sy="0.159629" sz="0.213501" batchStart="144" batchCount="36" vertRStart="96" vertREnd="119" />
+	<Mesh name="Cube_004" material="models/tiles/woods/TreeTop-material.material.xml" tx="0.689145" ty="0.590627" tz="-0.307988" sx="0.218228" sy="0.128236" sz="0.218228" batchStart="180" batchCount="36" vertRStart="120" vertREnd="143" />
+	<Mesh name="Cube_005" material="models/tiles/woods/TreeTop-material.material.xml" tx="0.255414" ty="0.595962" tz="-0.683326" sx="0.14356" sy="0.0997249" sz="0.25994" batchStart="216" batchCount="36" vertRStart="144" vertREnd="167" />
+</Model>
