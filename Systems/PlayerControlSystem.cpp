@@ -4,6 +4,7 @@
 #include "Components/UnitSelected.h"
 #include "Components/Unit.h"
 #include "Components/PlayerControlled.h"
+#include "Components/Ability.h"
 
 #include <GL/glfw.h>
 #include <sapling/App.h>
@@ -69,6 +70,7 @@ void PlayerControlSystem::selectUnit(Entity *current, Entity *selected)
   unitSelected->selected = true;
   current->getAs<SelectedEntity>()->entity = selected;
   current->getAs<PlayerState>()->state = kPlayerSelected;
+  selected->getAs<Unit>()->abilities[0]->getAs<Ability>()->selected = true;
 }
 
 void PlayerControlSystem::deselectUnit(Entity *current)
@@ -78,6 +80,7 @@ void PlayerControlSystem::deselectUnit(Entity *current)
   if (nullptr == selectedEntity) {
     return;
   }
+  selectedEntity->getAs<Unit>()->abilities[0]->getAs<Ability>()->selected = false;
 
   auto unitSelected = selectedEntity->getAs<UnitSelected>();
   if (unitSelected != nullptr) {

@@ -48,7 +48,9 @@ void MovementSelectorSystem::run(float dt)
 bool MovementSelectorSystem::unitCanMove(Entity *entity)
 {
   auto unitSelected = entity->getAs<Ability>()->unit->getAs<UnitSelected>();
-  return unitSelected->selected && !unitSelected->usingAbility;
+  return entity->getAs<Ability>()->selected &&
+         unitSelected->selected &&
+         !unitSelected->usingAbility;
 }
 
 void MovementSelectorSystem::mouseSelect(Entity *entity)
