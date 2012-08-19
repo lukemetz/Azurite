@@ -2,5 +2,4 @@
 using namespace Component;
 Tile::Tile()
 {
-
 }
