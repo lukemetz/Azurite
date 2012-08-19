@@ -13,7 +13,7 @@ namespace Component
   {
     int health;
     std::vector<float> resists;
-
+    std::vector<Entity *> abilities;
     void takeDamage(Resist type, float amount);
     Unit();
 

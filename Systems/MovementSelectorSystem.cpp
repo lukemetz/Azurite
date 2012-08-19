@@ -11,7 +11,7 @@
 #include "Components/MovementSelector.h"
 #include <sapling/Components/components.h>
 #include "Components/PlayerState.h"
-
+#include "Components/Ability.h"
 #include <sapling/App.h>
 #include <sapling/Utils.h>
 
@@ -31,7 +31,7 @@ void MovementSelectorSystem::run(float dt)
       continue;
     }
 
-    auto unitSelected = entity->getAs<UnitSelected>();
+    auto unitSelected = entity->getAs<Ability>()->unit->getAs<UnitSelected>();
 
     bool justStartedUsingAbility = !unitSelected->prevSelected && unitSelected->selected;
     if ( justStartedUsingAbility ) {
@@ -47,7 +47,7 @@ void MovementSelectorSystem::run(float dt)
 
 bool MovementSelectorSystem::unitCanMove(Entity *entity)
 {
-  auto unitSelected = entity->getAs<UnitSelected>();
+  auto unitSelected = entity->getAs<Ability>()->unit->getAs<UnitSelected>();
   return unitSelected->selected && !unitSelected->usingAbility;
 }
 
@@ -71,13 +71,13 @@ void MovementSelectorSystem::mouseSelect(Entity *entity)
       tc->selected = 1;
       sc->entity = en;
 
-      auto transformComponent = entity->getAs<Transform>();
+      auto transformComponent = entity->getAs<Ability>()->unit->getAs<Transform>();
       transformComponent->pos = en->getAs<Transform>()->pos;
 
       auto movementComponent = entity->getAs<Movement>();
       movementComponent->tiles = movementSelector->possibleMoves[en].path;
       movementComponent->startTime = Helper::getPlayerState()->getAs<PlayerState>()->turnStartTime;
-      entity->getAs<UnitSelected>()->selected = false;
+      entity->getAs<Ability>()->unit->getAs<UnitSelected>()->selected = false;
     }
   }
 }
@@ -118,7 +118,7 @@ std::map<Entity *, MovementPath>
 
 void MovementSelectorSystem::selectPossibleLocations(Entity *entity)
 {
-  Entity * onTile = entity->getAs<TileObject>()->tile;
+  Entity * onTile = entity->getAs<Ability>()->unit->getAs<TileObject>()->tile;
   MovementPath noMove;
   noMove.time = 0;
 

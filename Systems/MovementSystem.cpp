@@ -7,7 +7,7 @@
 #include "Components/TileObject.h"
 #include "Helper.h"
 #include "Components/PlayerState.h"
-
+#include "Components/Ability.h"
 using namespace Component;
 MovementSystem::MovementSystem()
 {
@@ -20,8 +20,8 @@ void MovementSystem::run(float dt)
   ensys->getEntities<Movement>(entities);
   for(Entity *entity : entities) {
     Movement *mc = entity->getAs<Movement>();
-    AnimationTimer *at = entity->getAs<AnimationTimer>();
-    Transform *tc = entity->getAs<Transform>();
+    AnimationTimer *at = entity->getAs<Ability>()->unit->getAs<AnimationTimer>();
+    Transform *tc = entity->getAs<Ability>()->unit->getAs<Transform>();
     if (mc != NULL && at != NULL && tc != NULL) {
 
       if (Helper::getPlayerState()->getAs<PlayerState>()->state == kPlayerAnimating) {
@@ -42,7 +42,7 @@ void MovementSystem::run(float dt)
           currentTileIndex = static_cast<int>(mc->tiles.size()-1);
           if (currentTileIndex > 0) {
             Entity * onTile = mc->tiles[currentTileIndex];
-            entity->getAs<TileObject>()->tile = onTile;
+            entity->getAs<Ability>()->unit->getAs<TileObject>()->tile = onTile;
           }
         }
       }

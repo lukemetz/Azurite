@@ -7,7 +7,7 @@
 
 #include "Helper.h"
 #include "Components/PlayerState.h"
-
+#include "Components/Unit.h"
 using namespace Component;
 
 void ComputerMovementSystem::run(float dt)
@@ -15,7 +15,7 @@ void ComputerMovementSystem::run(float dt)
   auto entities = EntitySystem::sharedInstance()->getEntities<ComputerControlled>();
 
   for (Entity *entity : entities) {
-    auto movementComponent = entity->getAs<Movement>();
+    auto movementComponent = entity->getAs<Unit>()->abilities[0]->getAs<Movement>();
     if (nullptr != movementComponent) {
       auto computerControlled = entity->getAs<ComputerControlled>();
       auto playerState = Helper::getPlayerState()->getAs<PlayerState>();

@@ -17,6 +17,7 @@
 #include "Components/ComputerControlled.h"
 #include "Components/StoneTile.h"
 #include "Components/WoodsTile.h"
+#include "Components/Ability.h"
 
 #include "Systems/MovementSystem.h"
 #include "Systems/AnimationTimerSystem.h"
@@ -38,15 +39,22 @@ Entity *createEntity()
   EntitySystem *entitySystem = EntitySystem::sharedInstance();
   Entity *en = new Entity;
   entitySystem->createComponent<TileObject>(en);
-  entitySystem->createComponent<Unit>(en);
   entitySystem->createComponent<Transform>(en);
   entitySystem->createComponent<Mesh>(en);
   entitySystem->createComponent<AnimationTimer>(en);
-  entitySystem->createComponent<Movement>(en);
   entitySystem->createComponent<Input>(en);
   entitySystem->createComponent<SelectedEntity>(en);
   entitySystem->createComponent<UnitSelected>(en);
-  entitySystem->createComponent<MovementSelector>(en);
+  Unit * unit = entitySystem->createComponent<Unit>(en);
+
+  Entity *moveAbility = new Entity;
+  Ability * ability = entitySystem->createComponent<Ability>(moveAbility);
+  entitySystem->createComponent<Movement>(moveAbility);
+  entitySystem->createComponent<MovementSelector>(moveAbility);
+  entitySystem->createComponent<Input>(moveAbility);
+  entitySystem->createComponent<SelectedEntity>(moveAbility);
+  ability->unit = en;
+  unit->abilities.push_back(moveAbility);
 
   en->getAs<Mesh>()->path = "models/unit.scene.xml";
   en->getAs<Transform>()->pos = Vec3f(5,2,5);
