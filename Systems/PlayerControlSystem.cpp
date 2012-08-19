@@ -86,7 +86,8 @@ void PlayerControlSystem::deselectUnit(Entity *current)
     selectedEntityComponent->entity = nullptr;
   }
   auto playerState= current->getAs<PlayerState>();
-  playerState->state = kPlayerDeselected;
-
+  if (playerState->state == kPlayerSelected) {
+    playerState->state = kPlayerDeselected;
+  }
   Helper::deselectAllTiles();
 }
