@@ -6,10 +6,13 @@ namespace Component
   {
     std::vector<Entity *> path;
     float time;
+
   };
 
   struct MovementSelector: public Component
   {
     std::map<Entity *, MovementPath> possibleMoves;
+    bool prevSelected;
+    MovementSelector();
   };
 };

@@ -18,6 +18,8 @@
 #include "Components/StoneTile.h"
 #include "Components/WoodsTile.h"
 #include "Components/Ability.h"
+#include "Components/TargetedRangedAttack.h"
+#include "Components/TargetedRangedAttackSelector.h"
 
 #include "Systems/MovementSystem.h"
 #include "Systems/AnimationTimerSystem.h"
@@ -28,6 +30,9 @@
 #include "Systems/ComputerMovementSystem.h"
 #include "Systems/StoneTileSystem.h"
 #include "Systems/WoodsTileSystem.h"
+#include "Systems/ProjectileSystem.h"
+#include "Systems/TargetedRangedAttackSystem.h"
+#include "Systems/TargetedRangedAttackSelectorSystem.h"
 
 #include <stdlib.h>
 
@@ -46,6 +51,8 @@ Entity *createEntity()
   entitySystem->createComponent<SelectedEntity>(en);
   entitySystem->createComponent<UnitSelected>(en);
   Unit * unit = entitySystem->createComponent<Unit>(en);
+  en->getAs<Mesh>()->path = "models/unit.scene.xml";
+  en->getAs<Transform>()->pos = Vec3f(5,2,5);
 
   Entity *moveAbility = new Entity;
   Ability * ability = entitySystem->createComponent<Ability>(moveAbility);
@@ -53,11 +60,20 @@ Entity *createEntity()
   entitySystem->createComponent<MovementSelector>(moveAbility);
   entitySystem->createComponent<Input>(moveAbility);
   entitySystem->createComponent<SelectedEntity>(moveAbility);
+  entitySystem->createComponent<AnimationTimer>(moveAbility);
+
   ability->unit = en;
   unit->abilities.push_back(moveAbility);
 
-  en->getAs<Mesh>()->path = "models/unit.scene.xml";
-  en->getAs<Transform>()->pos = Vec3f(5,2,5);
+  Entity *rangedAbility = new Entity;
+  ability = entitySystem->createComponent<Ability>(rangedAbility);
+  entitySystem->createComponent<Input>(rangedAbility);
+  entitySystem->createComponent<TargetedRangedAttack>(rangedAbility);
+  entitySystem->createComponent<TargetedRangedAttackSelector>(rangedAbility);
+  entitySystem->createComponent<AnimationTimer>(rangedAbility);
+  ability->unit = en;
+  unit->abilities.push_back(rangedAbility);
+
   return en;
 }
 
@@ -154,6 +170,11 @@ void engineInit() {
   entitySystem->addSystem<TileSelectedSystem>();
   entitySystem->addSystem<PlayerControlSystem>();
   entitySystem->addSystem<ComputerMovementSystem>();
+
+  entitySystem->addSystem<TargetedRangedAttackSelectorSystem>();
+  entitySystem->addSystem<TargetedRangedAttackSystem>();
+  entitySystem->addSystem<ProjectileSystem>();
+
 
   //Tile systems
   entitySystem->addSystem<StoneTileSystem>();

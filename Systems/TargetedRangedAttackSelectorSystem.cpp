@@ -3,6 +3,7 @@
 #include "Components/TileObject.h"
 #include "Components/UnitSelected.h"
 #include "Components/PlayerState.h"
+#include "Components/Ability.h"
 #include <sapling/Components/components.h>
 #include "Helper.h"
 #include <sapling/Utils.h>
@@ -12,27 +13,33 @@ void TargetedRangedAttackSelectorSystem::run(float dt)
 {
   auto entities = EntitySystem::sharedInstance()->getEntities<TargetedRangedAttack>();
   for (Entity *entity : entities) {
+    auto targetedRangedAttack = entity->getAs<TargetedRangedAttack>();
+    bool prevSelected = targetedRangedAttack->hasBeenSelected;
+    bool selected = entity->getAs<Ability>()->selected;
+    targetedRangedAttack->hasBeenSelected = selected;
+
     if ( !unitCanAttack(entity) ) {
       continue;
     }
-    auto targetedRangedAttack = entity->getAs<TargetedRangedAttack>();
-    bool prevSelected = targetedRangedAttack->hasBeenSelected;
-    bool selected = entity->getAs<UnitSelected>()->selected;
+
     bool justStartedUsingAbility = !prevSelected && selected;
     if (justStartedUsingAbility) {
-      targetedRangedAttack->hasBeenSelected = selected;
       //Select all in radius
     }
+
     Input *ic = entity->getAs<Input>();
     if (ic->mouseJustPressed(0)) {
       mouseSelect(entity);
+    }
+
+    if (ic->keyJustPressed('C')) {
+      entity->getAs<Ability>()->selected = false;
     }
   }
 }
 
 bool TargetedRangedAttackSelectorSystem::unitCanAttack(Entity *entity) {
-  auto unitSelected = entity->getAs<UnitSelected>();
-  return unitSelected->selected && !unitSelected->usingAbility;
+  return entity->getAs<Ability>()->selected;
 }
 
 void TargetedRangedAttackSelectorSystem::mouseSelect(Entity *entity)
@@ -51,7 +58,7 @@ void TargetedRangedAttackSelectorSystem::mouseSelect(Entity *entity)
       auto targetedRangedAttack = entity->getAs<TargetedRangedAttack>();
       targetedRangedAttack->target = en;
       targetedRangedAttack->startTime = Helper::getPlayerState()->getAs<PlayerState>()->turnStartTime;
-      entity->getAs<UnitSelected>()->selected = false;
+      entity->getAs<Ability>()->selected = false;
     }
   }
 }

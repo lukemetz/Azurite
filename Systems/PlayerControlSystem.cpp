@@ -20,11 +20,26 @@ void PlayerControlSystem::preRun(float dt)
   for (Entity *entity : entities) {
     mouseSelectObject(entity);
     keyboardDeselect(entity);
-
     auto ic = entity->getAs<Input>();
     auto psc = entity->getAs<PlayerState>();
     if (ic->keyJustPressed('P')) {
       psc->state = kPlayerAnimating;
+    }
+
+    if (ic->keyJustPressed('1')) {
+      auto selectedEntity = entity->getAs<SelectedEntity>()->entity;
+      if (nullptr != selectedEntity ) {
+        Helper::deselectAllTiles();
+        selectedEntity->getAs<Unit>()->abilities[1]->getAs<Ability>()->selected = true;
+      }
+    }
+
+    if (ic->keyJustPressed('Q')) {
+      auto selectedEntity = entity->getAs<SelectedEntity>()->entity;
+      if (nullptr != selectedEntity ) {
+        Helper::deselectAllTiles();
+        selectedEntity->getAs<Unit>()->abilities[0]->getAs<Ability>()->selected = true;
+      }
     }
   }
 }
@@ -70,7 +85,6 @@ void PlayerControlSystem::selectUnit(Entity *current, Entity *selected)
   unitSelected->selected = true;
   current->getAs<SelectedEntity>()->entity = selected;
   current->getAs<PlayerState>()->state = kPlayerSelected;
-  selected->getAs<Unit>()->abilities[0]->getAs<Ability>()->selected = true;
 }
 
 void PlayerControlSystem::deselectUnit(Entity *current)

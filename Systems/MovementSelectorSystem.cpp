@@ -31,9 +31,11 @@ void MovementSelectorSystem::run(float dt)
       continue;
     }
 
-    auto unitSelected = entity->getAs<Ability>()->unit->getAs<UnitSelected>();
+    auto ability = entity->getAs<Ability>();
+    auto movementSelector = entity->getAs<MovementSelector>();
 
-    bool justStartedUsingAbility = !unitSelected->prevSelected && unitSelected->selected;
+    bool justStartedUsingAbility = movementSelector->prevSelected && ability->selected;
+    movementSelector->prevSelected = ability->selected;
     if ( justStartedUsingAbility ) {
       selectPossibleLocations(entity);
     }
@@ -79,7 +81,7 @@ void MovementSelectorSystem::mouseSelect(Entity *entity)
       auto movementComponent = entity->getAs<Movement>();
       movementComponent->tiles = movementSelector->possibleMoves[en].path;
       movementComponent->startTime = Helper::getPlayerState()->getAs<PlayerState>()->turnStartTime;
-      entity->getAs<Ability>()->unit->getAs<UnitSelected>()->selected = false;
+      entity->getAs<Ability>()->selected = false;
     }
   }
 }

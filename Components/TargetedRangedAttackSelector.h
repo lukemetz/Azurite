@@ -2,7 +2,7 @@
 
 namespace Component
 {
-  struct TargetedRangedAttackSelector
+  struct TargetedRangedAttackSelector : public Component
   {
     std::vector<Entity *> possibleTargets;
     bool hasBeenSelected;

@@ -5,7 +5,7 @@
 #include "Components/PlayerState.h"
 #include <sapling/Components/components.h>
 #include "Components/Projectile.h"
-
+#include "Components/Ability.h"
 using namespace Component;
 void TargetedRangedAttackSystem::run(float dt)
 {
@@ -27,7 +27,7 @@ void TargetedRangedAttackSystem::run(float dt)
         Projectile * proj = ensys->createComponent<Projectile>(en);
         ensys->createComponent<AnimationTimer>(en);
         proj->startTime = targetedRangedAttack->startTime + targetedRangedAttack->delay;
-        proj->startPos = entity->getAs<Transform>()->pos;
+        proj->startPos = entity->getAs<Ability>()->unit->getAs<Transform>()->pos;
 
         proj->endPos = targetedRangedAttack->target->getAs<Transform>()->pos;
       }

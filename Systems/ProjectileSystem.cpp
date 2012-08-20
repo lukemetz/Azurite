@@ -17,7 +17,7 @@ void ProjectileSystem::run(float dt)
       float diff = entity->getAs<AnimationTimer>()->time - proj->startTime;
       Vec3f direction = proj->endPos - proj->startPos;
       direction.normalize();
-      entity->getAs<Transform>()->pos = direction * proj->speed * diff + Vec3f(.5, .5, .5); //Offset based on mesh locations.
+      entity->getAs<Transform>()->pos = proj->startPos + direction * proj->speed * diff + Vec3f(.5, .5, .5); //Offset based on mesh locations.
     }
   }
 }
