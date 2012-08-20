@@ -25,7 +25,8 @@ void TargetedRangedAttackSystem::run(float dt)
         mc->path = "models/projectiles/bullet/bullet.scene.xml";
         ensys->createComponent<Transform>(en);
         Projectile * proj = ensys->createComponent<Projectile>(en);
-        ensys->createComponent<AnimationTimer>(en);
+        AnimationTimer * animationTimer = ensys->createComponent<AnimationTimer>(en);
+        animationTimer->time = entity->getAs<AnimationTimer>()->time;
         proj->startTime = targetedRangedAttack->startTime + targetedRangedAttack->delay;
         proj->startPos = entity->getAs<Ability>()->unit->getAs<Transform>()->pos;
 

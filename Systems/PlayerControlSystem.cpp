@@ -22,6 +22,7 @@ void PlayerControlSystem::preRun(float dt)
     auto ic = entity->getAs<Input>();
     auto psc = entity->getAs<PlayerState>();
     if (ic->keyJustPressed('P')) {
+      Helper::deselectAllTiles();
       psc->state = kPlayerAnimating;
     }
 
