@@ -7,7 +7,6 @@
 #include "Components/Tile.h"
 #include "Components/TileObject.h"
 #include "Components/SelectedEntity.h"
-#include "Components/UnitSelected.h"
 #include "Components/MovementSelector.h"
 #include <sapling/Components/components.h>
 #include "Components/PlayerState.h"
@@ -49,10 +48,7 @@ void MovementSelectorSystem::run(float dt)
 
 bool MovementSelectorSystem::unitCanMove(Entity *entity)
 {
-  auto unitSelected = entity->getAs<Ability>()->unit->getAs<UnitSelected>();
-  return entity->getAs<Ability>()->selected &&
-         unitSelected->selected &&
-         !unitSelected->usingAbility;
+  return entity->getAs<Ability>()->selected;
 }
 
 void MovementSelectorSystem::mouseSelect(Entity *entity)

@@ -1,7 +1,6 @@
 #include "PlayerControlSystem.h"
 #include "Components/SelectedEntity.h"
 #include "Components/TileObject.h"
-#include "Components/UnitSelected.h"
 #include "Components/Unit.h"
 #include "Components/PlayerControlled.h"
 #include "Components/Ability.h"
@@ -81,8 +80,6 @@ void PlayerControlSystem::keyboardDeselect(Entity *entity)
 
 void PlayerControlSystem::selectUnit(Entity *current, Entity *selected)
 {
-  auto unitSelected= selected->getAs<UnitSelected>();
-  unitSelected->selected = true;
   current->getAs<SelectedEntity>()->entity = selected;
   current->getAs<PlayerState>()->state = kPlayerSelected;
 }
@@ -96,12 +93,7 @@ void PlayerControlSystem::deselectUnit(Entity *current)
   }
   selectedEntity->getAs<Unit>()->abilities[0]->getAs<Ability>()->selected = false;
 
-  auto unitSelected = selectedEntity->getAs<UnitSelected>();
-  if (unitSelected != nullptr) {
-    unitSelected->selected = false;
-    unitSelected->usingAbility = false;
-    selectedEntityComponent->entity = nullptr;
-  }
+  selectedEntityComponent->entity = nullptr;
   auto playerState= current->getAs<PlayerState>();
   if (playerState->state == kPlayerSelected) {
     playerState->state = kPlayerDeselected;

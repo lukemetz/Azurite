@@ -11,7 +11,6 @@
 #include "Components/TileSelected.h"
 #include "Components/SelectedEntity.h"
 #include "Components/PlayerState.h"
-#include "Components/UnitSelected.h"
 #include "Components/MovementSelector.h"
 #include "Components/PlayerControlled.h"
 #include "Components/ComputerControlled.h"
@@ -26,7 +25,6 @@
 #include "Systems/MovementSelectorSystem.h"
 #include "Systems/TileSelectedSystem.h"
 #include "Systems/PlayerControlSystem.h"
-#include "Systems/UnitSelectedSystem.h"
 #include "Systems/ComputerMovementSystem.h"
 #include "Systems/StoneTileSystem.h"
 #include "Systems/WoodsTileSystem.h"
@@ -49,7 +47,6 @@ Entity *createEntity()
   entitySystem->createComponent<AnimationTimer>(en);
   entitySystem->createComponent<Input>(en);
   entitySystem->createComponent<SelectedEntity>(en);
-  entitySystem->createComponent<UnitSelected>(en);
   Unit * unit = entitySystem->createComponent<Unit>(en);
   en->getAs<Mesh>()->path = "models/unit.scene.xml";
   en->getAs<Transform>()->pos = Vec3f(5,2,5);
@@ -163,7 +160,6 @@ void engineInit() {
   entitySystem->addSystem<InputHelperSystem>();
   entitySystem->addSystem<WobbleMoverSystem>();
 
-  entitySystem->addSystem<UnitSelectedSystem>();
   entitySystem->addSystem<MovementSystem>();
   entitySystem->addSystem<AnimationTimerSystem>();
   entitySystem->addSystem<MovementSelectorSystem>();
