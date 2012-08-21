@@ -16,6 +16,7 @@
 #include "Components/ComputerControlled.h"
 #include "Components/StoneTile.h"
 #include "Components/WoodsTile.h"
+#include "Components/PlainsTile.h"
 #include "Components/Ability.h"
 #include "Components/TargetedRangedAttack.h"
 #include "Components/TargetedRangedAttackSelector.h"
@@ -28,6 +29,7 @@
 #include "Systems/ComputerMovementSystem.h"
 #include "Systems/StoneTileSystem.h"
 #include "Systems/WoodsTileSystem.h"
+#include "Systems/PlainsTileSystem.h"
 #include "Systems/ProjectileSystem.h"
 #include "Systems/TargetedRangedAttackSystem.h"
 #include "Systems/TargetedRangedAttackSelectorSystem.h"
@@ -105,7 +107,9 @@ void engineInit() {
       if(3*i-j*i+3*(j+1) > 10) {
         entitySystem->createComponent<StoneTile>(tile);
       } else {
-        entitySystem->createComponent<WoodsTile>(tile);
+        //entitySystem->createComponent<WoodsTile>(tile);
+        entitySystem->createComponent<PlainsTile>(tile);
+
       }
       tile->getAs<Transform>()->pos = Vec3f(i, (float)rand()/RAND_MAX/4.0f, j);
     }
@@ -175,6 +179,7 @@ void engineInit() {
   //Tile systems
   entitySystem->addSystem<StoneTileSystem>();
   entitySystem->addSystem<WoodsTileSystem>();
+  entitySystem->addSystem<PlainsTileSystem>();
 
 }
 
