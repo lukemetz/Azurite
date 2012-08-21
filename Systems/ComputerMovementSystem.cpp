@@ -26,7 +26,8 @@ void ComputerMovementSystem::run(float dt)
         movementComponent->tiles.clear();
         movementComponent->startTime = playerState->turnStartTime;
         movementComponent->tiles.push_back(tile);
-        movementComponent->tiles.push_back(tile->getAs<Tile>()->neighbors[0]);
+        int i = rand()%4;
+        movementComponent->tiles.push_back(tile->getAs<Tile>()->neighbors[i]);
       }
     }
   }
