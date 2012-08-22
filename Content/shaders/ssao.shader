@@ -1,10 +1,6 @@
 [[FX]]
 
 // Samplers
-sampler2D depthBuf = sampler_state
-{
-	Address = Clamp;
-};
 
 sampler2D gbuf0 = sampler_state
 {
@@ -74,8 +70,6 @@ void main( void )
 
 uniform sampler2D randomBuf;
 uniform vec2 frameBufSize;
-uniform sampler2D depthBuf;
-uniform sampler2D normalsBuf;
 
 varying vec2 texCoords;
 vec2 getRandom(vec2 coord)
@@ -127,7 +121,7 @@ void main( void )
   }
   ao /= iterations*4.0;
   ao = 1-clamp(ao, 0, 1);
-  gl_FragColor = vec4(ao, ao, ao, 1);//texture2D(depthBuf, texCoords);
+  gl_FragColor = vec4(ao, ao, ao, 1);
 }
 
 [[FS_VERTICALBLUR]]
@@ -180,4 +174,3 @@ void main( void )
   }
   gl_FragColor = outCol;
 }
-

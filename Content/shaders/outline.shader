@@ -101,7 +101,7 @@ void main( void )
 	vec4 col1 = texture2D( buf1, texCoords );	// Bloom
   vec4 col2 = texture2D( buf2, texCoords ); // Outline
   
-  vec4 col3 = texture2D( buf3, texCoords);
+  vec4 col3 = texture2D( buf3, texCoords); //SSAO
 	vec4 col = 1.0 - exp2( -hdrExposure * col0 );
 	gl_FragColor = col3*col2*(col+col1);
 }
