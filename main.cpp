@@ -104,12 +104,13 @@ void engineInit() {
       entitySystem->createComponent<Transform>(tile);
       entitySystem->createComponent<Tile>(tile);
       entitySystem->createComponent<TileSelected>(tile);
-      if(3*i-j*i+3*(j+1) > 10) {
+      int w = 3*i-j*i+3*(j+1);
+      if(w < 5) {
         entitySystem->createComponent<StoneTile>(tile);
-      } else {
-        //entitySystem->createComponent<WoodsTile>(tile);
+      } else if(w < 10) {
         entitySystem->createComponent<PlainsTile>(tile);
-
+      } else {
+        entitySystem->createComponent<WoodsTile>(tile);
       }
       tile->getAs<Transform>()->pos = Vec3f(i, (float)rand()/RAND_MAX/4.0f, j);
     }
