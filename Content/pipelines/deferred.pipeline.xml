@@ -7,7 +7,7 @@
 		<RenderTarget id="BLURBUF2" depthBuf="false" numColBufs="1" format="RGBA8" scale="0.5"/>
     <RenderTarget id="FINALIMAGE" depthBuf="false" numColBufs="1" format="RGBA16F" scale="1.0"/>
     <RenderTarget id="OUTLINE" depthBuf="false" numColBufs="1" format="RGBA8" scale="1.0"/>
-    <RenderTarget id="SSAOBUF" depthBuf="false" numColBufs="1" format="RGBA8" scale="1.0" />
+    <RenderTarget id="SSAOBUF" depthBuf="false" numColBufs="1" format="RGBA8" scale="0.25" />
     <RenderTarget id="SSAOBLUR" depthBuf="false" numColBufs="1" format="RGBA8" scale="1.0" />
     <RenderTarget id="TEMPSSAOBLUR" depthBuf="false" numColBufs="1" format="RGBA8" scale="1.0" />
   </Setup>
@@ -100,7 +100,7 @@
       <BindBuffer sampler="buf0" sourceRT="MBUFF" bufIndex="0" />
       <BindBuffer sampler="buf1" sourceRT="BLURBUF1" bufIndex="0" />
       <BindBuffer sampler="buf2" sourceRT="OUTLINE" bufIndex="0" />
-      <BindBuffer sampler="buf3" sourceRT="SSAOBUF" bufIndex="0" />
+      <BindBuffer sampler="buf3" sourceRT="SSAOBLUR" bufIndex="0" />
 			<DrawQuad material="pipelines/outline.material.xml" context="FINALPASS" />
 			<UnbindBuffers />
 		</Stage>
