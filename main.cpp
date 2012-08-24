@@ -111,17 +111,14 @@ void engineInit() {
     json_object_foreach(jsonTile, key, value) {
       if(strcmp(key, "type") == 0) {
         const char * type = json_string_value(value);
-        if (strcmp(type, "StoneTile") == 0) {
-          entitySystem->createComponent<StoneTile>(tile);
+#define tileOfType(tileType) \
+        if (strcmp(type, #tileType) == 0) {\
+          entitySystem->createComponent<tileType>(tile);\
         }
-
-        if (strcmp(type, "WoodsTile") == 0) {
-          entitySystem->createComponent<WoodsTile>(tile);
-        }
-
-        if (strcmp(type, "PlainsTile") == 0) {
-          entitySystem->createComponent<PlainsTile>(tile);
-        }
+        tileOfType(WoodsTile)
+        tileOfType(PlainsTile)
+        tileOfType(StoneTile)
+#undef tileOfType
       } else if(strcmp(key, "pos") == 0) {
         json_t *comp = json_array_get(value, 0);
         t->pos.x = json_number_value(comp);
