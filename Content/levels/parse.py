@@ -39,7 +39,7 @@ def posDistance(t1, t2):
 
 def isNeighbor(p1, p2):
   vec = posDistance(p1, p2)
-  return vec[0] + vec[1] + vec[2] == 1
+  return vec[0] + vec[2] == 1
 
 for t1 in tiles:
   index = 0

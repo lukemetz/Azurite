@@ -14,7 +14,8 @@
   {
     "neighbors": [
       0, 
-      2
+      2, 
+      12
     ], 
     "pos": [
       0, 
@@ -25,7 +26,9 @@
   }, 
   {
     "neighbors": [
-      1
+      1, 
+      3, 
+      13
     ], 
     "pos": [
       0, 
@@ -35,7 +38,11 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      2, 
+      4, 
+      14
+    ], 
     "pos": [
       0, 
       2.43, 
@@ -45,7 +52,9 @@
   }, 
   {
     "neighbors": [
-      5
+      3, 
+      5, 
+      15
     ], 
     "pos": [
       0, 
@@ -56,7 +65,9 @@
   }, 
   {
     "neighbors": [
-      4
+      4, 
+      6, 
+      16
     ], 
     "pos": [
       0, 
@@ -67,7 +78,9 @@
   }, 
   {
     "neighbors": [
-      7
+      5, 
+      7, 
+      17
     ], 
     "pos": [
       0, 
@@ -79,7 +92,8 @@
   {
     "neighbors": [
       6, 
-      8
+      8, 
+      18
     ], 
     "pos": [
       0, 
@@ -91,7 +105,8 @@
   {
     "neighbors": [
       7, 
-      9
+      9, 
+      19
     ], 
     "pos": [
       0, 
@@ -127,7 +142,9 @@
   }, 
   {
     "neighbors": [
-      0
+      0, 
+      12, 
+      23
     ], 
     "pos": [
       1, 
@@ -137,7 +154,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      1, 
+      11, 
+      13, 
+      24
+    ], 
     "pos": [
       1, 
       2.43, 
@@ -146,7 +168,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      2, 
+      12, 
+      14, 
+      25
+    ], 
     "pos": [
       1, 
       2.22, 
@@ -155,7 +182,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      3, 
+      13, 
+      15, 
+      26
+    ], 
     "pos": [
       1, 
       2.08, 
@@ -165,7 +197,10 @@
   }, 
   {
     "neighbors": [
-      16
+      4, 
+      14, 
+      16, 
+      27
     ], 
     "pos": [
       1, 
@@ -176,7 +211,10 @@
   }, 
   {
     "neighbors": [
-      15
+      5, 
+      15, 
+      17, 
+      28
     ], 
     "pos": [
       1, 
@@ -186,7 +224,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      6, 
+      16, 
+      18, 
+      29
+    ], 
     "pos": [
       1, 
       2.35, 
@@ -195,7 +238,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      7, 
+      17, 
+      19, 
+      30
+    ], 
     "pos": [
       1, 
       2.3, 
@@ -204,7 +252,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      8, 
+      18, 
+      20, 
+      31
+    ], 
     "pos": [
       1, 
       2.43, 
@@ -215,7 +268,9 @@
   {
     "neighbors": [
       9, 
-      21
+      19, 
+      21, 
+      32
     ], 
     "pos": [
       1, 
@@ -228,7 +283,8 @@
     "neighbors": [
       10, 
       20, 
-      22
+      22, 
+      33
     ], 
     "pos": [
       1, 
@@ -239,7 +295,8 @@
   }, 
   {
     "neighbors": [
-      21
+      21, 
+      34
     ], 
     "pos": [
       1, 
@@ -249,7 +306,11 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      11, 
+      24, 
+      35
+    ], 
     "pos": [
       2, 
       2.43, 
@@ -259,6 +320,9 @@
   }, 
   {
     "neighbors": [
+      12, 
+      23, 
+      25, 
       36
     ], 
     "pos": [
@@ -269,7 +333,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      13, 
+      24, 
+      26, 
+      37
+    ], 
     "pos": [
       2, 
       2.24, 
@@ -278,7 +347,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      14, 
+      25, 
+      27, 
+      38
+    ], 
     "pos": [
       2, 
       2.35, 
@@ -287,7 +361,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      15, 
+      26, 
+      28, 
+      39
+    ], 
     "pos": [
       2, 
       2.55, 
@@ -296,7 +375,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      16, 
+      27, 
+      29, 
+      40
+    ], 
     "pos": [
       2, 
       2.17, 
@@ -305,7 +389,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      17, 
+      28, 
+      30, 
+      41
+    ], 
     "pos": [
       2, 
       2.4, 
@@ -315,6 +404,9 @@
   }, 
   {
     "neighbors": [
+      18, 
+      29, 
+      31, 
       42
     ], 
     "pos": [
@@ -325,7 +417,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      19, 
+      30, 
+      32, 
+      43
+    ], 
     "pos": [
       2, 
       2.3, 
@@ -334,7 +431,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      20, 
+      31, 
+      33, 
+      44
+    ], 
     "pos": [
       2, 
       2.43, 
@@ -343,7 +445,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      21, 
+      32, 
+      34, 
+      45
+    ], 
     "pos": [
       2, 
       2.36, 
@@ -352,7 +459,11 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      22, 
+      33, 
+      46
+    ], 
     "pos": [
       2, 
       2.43, 
@@ -361,7 +472,11 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      23, 
+      36, 
+      47
+    ], 
     "pos": [
       3, 
       2.3, 
@@ -371,7 +486,10 @@
   }, 
   {
     "neighbors": [
-      24
+      24, 
+      35, 
+      37, 
+      48
     ], 
     "pos": [
       3, 
@@ -381,7 +499,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      25, 
+      36, 
+      38, 
+      49
+    ], 
     "pos": [
       3, 
       2.3, 
@@ -390,7 +513,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      26, 
+      37, 
+      39, 
+      50
+    ], 
     "pos": [
       3, 
       2.55, 
@@ -399,7 +527,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      27, 
+      38, 
+      40, 
+      51
+    ], 
     "pos": [
       3, 
       2.32, 
@@ -408,7 +541,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      28, 
+      39, 
+      41, 
+      52
+    ], 
     "pos": [
       3, 
       2.31, 
@@ -417,7 +555,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      29, 
+      40, 
+      42, 
+      53
+    ], 
     "pos": [
       3, 
       2.35, 
@@ -427,7 +570,10 @@
   }, 
   {
     "neighbors": [
-      30
+      30, 
+      41, 
+      43, 
+      54
     ], 
     "pos": [
       3, 
@@ -438,7 +584,10 @@
   }, 
   {
     "neighbors": [
-      44
+      31, 
+      42, 
+      44, 
+      55
     ], 
     "pos": [
       3, 
@@ -449,8 +598,10 @@
   }, 
   {
     "neighbors": [
+      32, 
       43, 
-      45
+      45, 
+      56
     ], 
     "pos": [
       3, 
@@ -461,7 +612,10 @@
   }, 
   {
     "neighbors": [
-      44
+      33, 
+      44, 
+      46, 
+      57
     ], 
     "pos": [
       3, 
@@ -471,7 +625,11 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      34, 
+      45, 
+      58
+    ], 
     "pos": [
       3, 
       2.33, 
@@ -480,7 +638,11 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      35, 
+      48, 
+      60
+    ], 
     "pos": [
       4, 
       2.39, 
@@ -490,6 +652,9 @@
   }, 
   {
     "neighbors": [
+      36, 
+      47, 
+      49, 
       61
     ], 
     "pos": [
@@ -500,7 +665,12 @@
     "type": "PlainsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      37, 
+      48, 
+      50, 
+      62
+    ], 
     "pos": [
       4, 
       2.42, 
@@ -509,7 +679,12 @@
     "type": "PlainsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      38, 
+      49, 
+      51, 
+      63
+    ], 
     "pos": [
       4, 
       2.5, 
@@ -518,7 +693,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      39, 
+      50, 
+      52, 
+      64
+    ], 
     "pos": [
       4, 
       2.25, 
@@ -527,7 +707,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      40, 
+      51, 
+      53, 
+      65
+    ], 
     "pos": [
       4, 
       2.55, 
@@ -536,7 +721,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      41, 
+      52, 
+      54, 
+      66
+    ], 
     "pos": [
       4, 
       2.4, 
@@ -545,7 +735,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      42, 
+      53, 
+      55, 
+      67
+    ], 
     "pos": [
       4, 
       2.42, 
@@ -554,7 +749,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      43, 
+      54, 
+      56, 
+      68
+    ], 
     "pos": [
       4, 
       2.15, 
@@ -563,7 +763,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      44, 
+      55, 
+      57, 
+      69
+    ], 
     "pos": [
       4, 
       2.29, 
@@ -572,7 +777,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      45, 
+      56, 
+      58, 
+      70
+    ], 
     "pos": [
       4, 
       2.43, 
@@ -581,7 +791,11 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      46, 
+      57, 
+      71
+    ], 
     "pos": [
       4, 
       2.42, 
@@ -591,6 +805,7 @@
   }, 
   {
     "neighbors": [
+      60, 
       72
     ], 
     "pos": [
@@ -602,7 +817,10 @@
   }, 
   {
     "neighbors": [
-      61
+      47, 
+      59, 
+      61, 
+      73
     ], 
     "pos": [
       5, 
@@ -614,7 +832,9 @@
   {
     "neighbors": [
       48, 
-      60
+      60, 
+      62, 
+      74
     ], 
     "pos": [
       5, 
@@ -624,7 +844,12 @@
     "type": "PlainsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      49, 
+      61, 
+      63, 
+      75
+    ], 
     "pos": [
       5, 
       2.32, 
@@ -633,7 +858,12 @@
     "type": "PlainsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      50, 
+      62, 
+      64, 
+      76
+    ], 
     "pos": [
       5, 
       2.29, 
@@ -642,7 +872,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      51, 
+      63, 
+      65, 
+      77
+    ], 
     "pos": [
       5, 
       2.08, 
@@ -651,7 +886,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      52, 
+      64, 
+      66, 
+      78
+    ], 
     "pos": [
       5, 
       2.39, 
@@ -660,7 +900,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      53, 
+      65, 
+      67, 
+      79
+    ], 
     "pos": [
       5, 
       2.32, 
@@ -669,7 +914,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      54, 
+      66, 
+      68, 
+      80
+    ], 
     "pos": [
       5, 
       2.27, 
@@ -678,7 +928,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      55, 
+      67, 
+      69, 
+      81
+    ], 
     "pos": [
       5, 
       2.24, 
@@ -687,7 +942,12 @@
     "type": "PlainsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      56, 
+      68, 
+      70, 
+      82
+    ], 
     "pos": [
       5, 
       2.42, 
@@ -697,6 +957,9 @@
   }, 
   {
     "neighbors": [
+      57, 
+      69, 
+      71, 
       83
     ], 
     "pos": [
@@ -707,7 +970,10 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      58, 
+      70
+    ], 
     "pos": [
       5, 
       2.5, 
@@ -717,7 +983,9 @@
   }, 
   {
     "neighbors": [
-      59
+      59, 
+      73, 
+      84
     ], 
     "pos": [
       6, 
@@ -727,7 +995,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      60, 
+      72, 
+      74, 
+      85
+    ], 
     "pos": [
       6, 
       2.32, 
@@ -736,7 +1009,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      61, 
+      73, 
+      75, 
+      86
+    ], 
     "pos": [
       6, 
       2.21, 
@@ -745,7 +1023,12 @@
     "type": "PlainsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      62, 
+      74, 
+      76, 
+      87
+    ], 
     "pos": [
       6, 
       2.4, 
@@ -755,6 +1038,9 @@
   }, 
   {
     "neighbors": [
+      63, 
+      75, 
+      77, 
       88
     ], 
     "pos": [
@@ -765,7 +1051,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      64, 
+      76, 
+      78, 
+      89
+    ], 
     "pos": [
       6, 
       2.23, 
@@ -774,7 +1065,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      65, 
+      77, 
+      79, 
+      90
+    ], 
     "pos": [
       6, 
       2.34, 
@@ -783,7 +1079,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      66, 
+      78, 
+      80, 
+      91
+    ], 
     "pos": [
       6, 
       2.24, 
@@ -792,7 +1093,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      67, 
+      79, 
+      81, 
+      92
+    ], 
     "pos": [
       6, 
       2.37, 
@@ -801,7 +1107,12 @@
     "type": "PlainsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      68, 
+      80, 
+      82, 
+      93
+    ], 
     "pos": [
       6, 
       2.29, 
@@ -810,7 +1121,12 @@
     "type": "PlainsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      69, 
+      81, 
+      83, 
+      94
+    ], 
     "pos": [
       6, 
       2.5, 
@@ -820,7 +1136,9 @@
   }, 
   {
     "neighbors": [
-      70
+      70, 
+      82, 
+      95
     ], 
     "pos": [
       6, 
@@ -831,6 +1149,8 @@
   }, 
   {
     "neighbors": [
+      72, 
+      85, 
       96
     ], 
     "pos": [
@@ -841,7 +1161,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      73, 
+      84, 
+      86, 
+      97
+    ], 
     "pos": [
       7, 
       2.24, 
@@ -850,7 +1175,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      74, 
+      85, 
+      87, 
+      98
+    ], 
     "pos": [
       7, 
       2.25, 
@@ -859,7 +1189,12 @@
     "type": "PlainsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      75, 
+      86, 
+      88, 
+      99
+    ], 
     "pos": [
       7, 
       2.5, 
@@ -869,7 +1204,10 @@
   }, 
   {
     "neighbors": [
-      76
+      76, 
+      87, 
+      89, 
+      100
     ], 
     "pos": [
       7, 
@@ -879,7 +1217,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      77, 
+      88, 
+      90, 
+      101
+    ], 
     "pos": [
       7, 
       2.42, 
@@ -889,6 +1232,9 @@
   }, 
   {
     "neighbors": [
+      78, 
+      89, 
+      91, 
       102
     ], 
     "pos": [
@@ -899,7 +1245,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      79, 
+      90, 
+      92, 
+      103
+    ], 
     "pos": [
       7, 
       2.3, 
@@ -908,7 +1259,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      80, 
+      91, 
+      93, 
+      104
+    ], 
     "pos": [
       7, 
       2.43, 
@@ -917,7 +1273,12 @@
     "type": "PlainsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      81, 
+      92, 
+      94, 
+      105
+    ], 
     "pos": [
       7, 
       2.3, 
@@ -926,7 +1287,12 @@
     "type": "PlainsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      82, 
+      93, 
+      95, 
+      106
+    ], 
     "pos": [
       7, 
       2.13, 
@@ -935,7 +1301,11 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      83, 
+      94, 
+      107
+    ], 
     "pos": [
       7, 
       2.32, 
@@ -946,6 +1316,7 @@
   {
     "neighbors": [
       84, 
+      97, 
       109
     ], 
     "pos": [
@@ -956,7 +1327,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      85, 
+      96, 
+      98, 
+      110
+    ], 
     "pos": [
       8, 
       2.31, 
@@ -965,7 +1341,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      86, 
+      97, 
+      99, 
+      111
+    ], 
     "pos": [
       8, 
       2.15, 
@@ -974,7 +1355,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      87, 
+      98, 
+      100, 
+      112
+    ], 
     "pos": [
       8, 
       2.35, 
@@ -983,7 +1369,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      88, 
+      99, 
+      101, 
+      113
+    ], 
     "pos": [
       8, 
       2.24, 
@@ -992,7 +1383,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      89, 
+      100, 
+      102, 
+      114
+    ], 
     "pos": [
       8, 
       2.5, 
@@ -1002,7 +1398,10 @@
   }, 
   {
     "neighbors": [
-      90
+      90, 
+      101, 
+      103, 
+      115
     ], 
     "pos": [
       8, 
@@ -1012,7 +1411,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      91, 
+      102, 
+      104, 
+      116
+    ], 
     "pos": [
       8, 
       2.06, 
@@ -1021,7 +1425,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      92, 
+      103, 
+      105, 
+      117
+    ], 
     "pos": [
       8, 
       2.24, 
@@ -1031,6 +1440,9 @@
   }, 
   {
     "neighbors": [
+      93, 
+      104, 
+      106, 
       118
     ], 
     "pos": [
@@ -1041,7 +1453,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      94, 
+      105, 
+      107, 
+      119
+    ], 
     "pos": [
       8, 
       2.32, 
@@ -1050,7 +1467,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      95, 
+      106, 
+      108, 
+      120
+    ], 
     "pos": [
       8, 
       2.34, 
@@ -1059,7 +1481,10 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      107, 
+      121
+    ], 
     "pos": [
       8, 
       2.23, 
@@ -1070,6 +1495,7 @@
   {
     "neighbors": [
       96, 
+      110, 
       122
     ], 
     "pos": [
@@ -1081,6 +1507,9 @@
   }, 
   {
     "neighbors": [
+      97, 
+      109, 
+      111, 
       123
     ], 
     "pos": [
@@ -1092,6 +1521,9 @@
   }, 
   {
     "neighbors": [
+      98, 
+      110, 
+      112, 
       124
     ], 
     "pos": [
@@ -1103,6 +1535,9 @@
   }, 
   {
     "neighbors": [
+      99, 
+      111, 
+      113, 
       125
     ], 
     "pos": [
@@ -1113,7 +1548,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      100, 
+      112, 
+      114, 
+      126
+    ], 
     "pos": [
       9, 
       2.19, 
@@ -1122,7 +1562,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      101, 
+      113, 
+      115, 
+      127
+    ], 
     "pos": [
       9, 
       2.3, 
@@ -1131,7 +1576,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      102, 
+      114, 
+      116, 
+      128
+    ], 
     "pos": [
       9, 
       2.39, 
@@ -1140,7 +1590,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      103, 
+      115, 
+      117, 
+      129
+    ], 
     "pos": [
       9, 
       2.18, 
@@ -1149,7 +1604,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      104, 
+      116, 
+      118, 
+      130
+    ], 
     "pos": [
       9, 
       2.3, 
@@ -1159,7 +1619,10 @@
   }, 
   {
     "neighbors": [
-      105
+      105, 
+      117, 
+      119, 
+      131
     ], 
     "pos": [
       9, 
@@ -1169,7 +1632,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      106, 
+      118, 
+      120, 
+      132
+    ], 
     "pos": [
       9, 
       2.3, 
@@ -1179,7 +1647,10 @@
   }, 
   {
     "neighbors": [
-      121
+      107, 
+      119, 
+      121, 
+      133
     ], 
     "pos": [
       9, 
@@ -1190,7 +1661,9 @@
   }, 
   {
     "neighbors": [
-      120
+      108, 
+      120, 
+      134
     ], 
     "pos": [
       9, 
@@ -1201,7 +1674,9 @@
   }, 
   {
     "neighbors": [
-      109
+      109, 
+      123, 
+      135
     ], 
     "pos": [
       10, 
@@ -1212,7 +1687,10 @@
   }, 
   {
     "neighbors": [
-      110
+      110, 
+      122, 
+      124, 
+      136
     ], 
     "pos": [
       10, 
@@ -1223,7 +1701,10 @@
   }, 
   {
     "neighbors": [
-      111
+      111, 
+      123, 
+      125, 
+      137
     ], 
     "pos": [
       10, 
@@ -1234,7 +1715,10 @@
   }, 
   {
     "neighbors": [
-      112
+      112, 
+      124, 
+      126, 
+      138
     ], 
     "pos": [
       10, 
@@ -1244,7 +1728,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      113, 
+      125, 
+      127, 
+      139
+    ], 
     "pos": [
       10, 
       2.09, 
@@ -1253,7 +1742,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      114, 
+      126, 
+      128, 
+      140
+    ], 
     "pos": [
       10, 
       2.36, 
@@ -1262,7 +1756,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      115, 
+      127, 
+      129, 
+      141
+    ], 
     "pos": [
       10, 
       2.16, 
@@ -1271,7 +1770,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      116, 
+      128, 
+      130, 
+      142
+    ], 
     "pos": [
       10, 
       2.2, 
@@ -1280,7 +1784,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      117, 
+      129, 
+      131, 
+      143
+    ], 
     "pos": [
       10, 
       2.37, 
@@ -1289,7 +1798,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      118, 
+      130, 
+      132, 
+      144
+    ], 
     "pos": [
       10, 
       2.5, 
@@ -1298,7 +1812,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      119, 
+      131, 
+      133, 
+      145
+    ], 
     "pos": [
       10, 
       2.35, 
@@ -1308,6 +1827,9 @@
   }, 
   {
     "neighbors": [
+      120, 
+      132, 
+      134, 
       146
     ], 
     "pos": [
@@ -1318,7 +1840,11 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      121, 
+      133, 
+      147
+    ], 
     "pos": [
       10, 
       2.36, 
@@ -1327,7 +1853,11 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      122, 
+      136, 
+      148
+    ], 
     "pos": [
       11, 
       2.31, 
@@ -1336,7 +1866,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      123, 
+      135, 
+      137, 
+      149
+    ], 
     "pos": [
       11, 
       2.25, 
@@ -1345,7 +1880,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      124, 
+      136, 
+      138, 
+      150
+    ], 
     "pos": [
       11, 
       2.35, 
@@ -1354,7 +1894,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      125, 
+      137, 
+      139, 
+      151
+    ], 
     "pos": [
       11, 
       2.19, 
@@ -1363,7 +1908,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      126, 
+      138, 
+      140, 
+      152
+    ], 
     "pos": [
       11, 
       1.94, 
@@ -1372,7 +1922,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      127, 
+      139, 
+      141, 
+      153
+    ], 
     "pos": [
       11, 
       2.25, 
@@ -1381,7 +1936,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      128, 
+      140, 
+      142, 
+      154
+    ], 
     "pos": [
       11, 
       2.15, 
@@ -1390,7 +1950,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      129, 
+      141, 
+      143, 
+      155
+    ], 
     "pos": [
       11, 
       1.99, 
@@ -1399,7 +1964,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      130, 
+      142, 
+      144, 
+      156
+    ], 
     "pos": [
       11, 
       2.31, 
@@ -1408,7 +1978,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      131, 
+      143, 
+      145, 
+      157
+    ], 
     "pos": [
       11, 
       2.42, 
@@ -1417,7 +1992,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      132, 
+      144, 
+      146, 
+      158
+    ], 
     "pos": [
       11, 
       2.55, 
@@ -1428,6 +2008,8 @@
   {
     "neighbors": [
       133, 
+      145, 
+      147, 
       159
     ], 
     "pos": [
@@ -1438,7 +2020,11 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      134, 
+      146, 
+      160
+    ], 
     "pos": [
       11, 
       2.43, 
@@ -1447,7 +2033,11 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      135, 
+      149, 
+      162
+    ], 
     "pos": [
       12, 
       2.2, 
@@ -1456,7 +2046,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      136, 
+      148, 
+      150, 
+      163
+    ], 
     "pos": [
       12, 
       2.03, 
@@ -1465,7 +2060,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      137, 
+      149, 
+      151, 
+      164
+    ], 
     "pos": [
       12, 
       2.38, 
@@ -1474,7 +2074,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      138, 
+      150, 
+      152, 
+      165
+    ], 
     "pos": [
       12, 
       2.33, 
@@ -1483,7 +2088,12 @@
     "type": "PlainsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      139, 
+      151, 
+      153, 
+      166
+    ], 
     "pos": [
       12, 
       2.12, 
@@ -1492,7 +2102,12 @@
     "type": "PlainsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      140, 
+      152, 
+      154, 
+      167
+    ], 
     "pos": [
       12, 
       2.19, 
@@ -1501,7 +2116,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      141, 
+      153, 
+      155, 
+      168
+    ], 
     "pos": [
       12, 
       2.04, 
@@ -1510,7 +2130,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      142, 
+      154, 
+      156, 
+      169
+    ], 
     "pos": [
       12, 
       2.08, 
@@ -1519,7 +2144,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      143, 
+      155, 
+      157, 
+      170
+    ], 
     "pos": [
       12, 
       2.24, 
@@ -1528,7 +2158,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      144, 
+      156, 
+      158, 
+      171
+    ], 
     "pos": [
       12, 
       2.36, 
@@ -1537,7 +2172,12 @@
     "type": "PlainsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      145, 
+      157, 
+      159, 
+      172
+    ], 
     "pos": [
       12, 
       2.5, 
@@ -1548,6 +2188,8 @@
   {
     "neighbors": [
       146, 
+      158, 
+      160, 
       173
     ], 
     "pos": [
@@ -1558,7 +2200,10 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      147, 
+      159
+    ], 
     "pos": [
       12, 
       2.35, 
@@ -1568,6 +2213,7 @@
   }, 
   {
     "neighbors": [
+      162, 
       174
     ], 
     "pos": [
@@ -1578,7 +2224,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      148, 
+      161, 
+      163, 
+      175
+    ], 
     "pos": [
       13, 
       2.31, 
@@ -1587,7 +2238,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      149, 
+      162, 
+      164, 
+      176
+    ], 
     "pos": [
       13, 
       2.12, 
@@ -1596,7 +2252,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      150, 
+      163, 
+      165, 
+      177
+    ], 
     "pos": [
       13, 
       2.18, 
@@ -1605,7 +2266,12 @@
     "type": "PlainsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      151, 
+      164, 
+      166, 
+      178
+    ], 
     "pos": [
       13, 
       2.11, 
@@ -1614,7 +2280,12 @@
     "type": "PlainsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      152, 
+      165, 
+      167, 
+      179
+    ], 
     "pos": [
       13, 
       2.27, 
@@ -1623,7 +2294,12 @@
     "type": "PlainsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      153, 
+      166, 
+      168, 
+      180
+    ], 
     "pos": [
       13, 
       1.93, 
@@ -1632,7 +2308,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      154, 
+      167, 
+      169, 
+      181
+    ], 
     "pos": [
       13, 
       2.0, 
@@ -1641,7 +2322,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      155, 
+      168, 
+      170, 
+      182
+    ], 
     "pos": [
       13, 
       2.27, 
@@ -1650,7 +2336,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      156, 
+      169, 
+      171, 
+      183
+    ], 
     "pos": [
       13, 
       2.38, 
@@ -1659,7 +2350,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      157, 
+      170, 
+      172, 
+      184
+    ], 
     "pos": [
       13, 
       2.11, 
@@ -1668,7 +2364,12 @@
     "type": "PlainsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      158, 
+      171, 
+      173, 
+      185
+    ], 
     "pos": [
       13, 
       2.01, 
@@ -1678,7 +2379,9 @@
   }, 
   {
     "neighbors": [
-      159
+      159, 
+      172, 
+      186
     ], 
     "pos": [
       13, 
@@ -1690,6 +2393,7 @@
   {
     "neighbors": [
       161, 
+      175, 
       187
     ], 
     "pos": [
@@ -1700,7 +2404,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      162, 
+      174, 
+      176, 
+      188
+    ], 
     "pos": [
       14, 
       2.37, 
@@ -1709,7 +2418,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      163, 
+      175, 
+      177, 
+      189
+    ], 
     "pos": [
       14, 
       2.26, 
@@ -1718,7 +2432,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      164, 
+      176, 
+      178, 
+      190
+    ], 
     "pos": [
       14, 
       2.33, 
@@ -1727,7 +2446,12 @@
     "type": "PlainsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      165, 
+      177, 
+      179, 
+      191
+    ], 
     "pos": [
       14, 
       2.09, 
@@ -1736,7 +2460,12 @@
     "type": "PlainsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      166, 
+      178, 
+      180, 
+      192
+    ], 
     "pos": [
       14, 
       2.04, 
@@ -1745,7 +2474,12 @@
     "type": "PlainsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      167, 
+      179, 
+      181, 
+      193
+    ], 
     "pos": [
       14, 
       2.24, 
@@ -1754,7 +2488,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      168, 
+      180, 
+      182, 
+      194
+    ], 
     "pos": [
       14, 
       2.32, 
@@ -1763,7 +2502,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      169, 
+      181, 
+      183, 
+      195
+    ], 
     "pos": [
       14, 
       1.89, 
@@ -1772,7 +2516,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      170, 
+      182, 
+      184, 
+      196
+    ], 
     "pos": [
       14, 
       2.29, 
@@ -1781,7 +2530,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      171, 
+      183, 
+      185, 
+      197
+    ], 
     "pos": [
       14, 
       2.13, 
@@ -1790,7 +2544,12 @@
     "type": "PlainsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      172, 
+      184, 
+      186, 
+      198
+    ], 
     "pos": [
       14, 
       2.12, 
@@ -1799,7 +2558,11 @@
     "type": "PlainsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      173, 
+      185, 
+      199
+    ], 
     "pos": [
       14, 
       2.43, 
@@ -1821,7 +2584,9 @@
   }, 
   {
     "neighbors": [
+      175, 
       187, 
+      189, 
       200
     ], 
     "pos": [
@@ -1832,7 +2597,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      176, 
+      188, 
+      190, 
+      201
+    ], 
     "pos": [
       15, 
       2.43, 
@@ -1841,7 +2611,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      177, 
+      189, 
+      191, 
+      202
+    ], 
     "pos": [
       15, 
       2.42, 
@@ -1850,7 +2625,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      178, 
+      190, 
+      192, 
+      203
+    ], 
     "pos": [
       15, 
       2.25, 
@@ -1859,7 +2639,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      179, 
+      191, 
+      193, 
+      204
+    ], 
     "pos": [
       15, 
       1.67, 
@@ -1868,7 +2653,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      180, 
+      192, 
+      194, 
+      205
+    ], 
     "pos": [
       15, 
       2.31, 
@@ -1877,7 +2667,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      181, 
+      193, 
+      195, 
+      206
+    ], 
     "pos": [
       15, 
       2.35, 
@@ -1886,7 +2681,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      182, 
+      194, 
+      196, 
+      207
+    ], 
     "pos": [
       15, 
       1.76, 
@@ -1895,7 +2695,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      183, 
+      195, 
+      197, 
+      208
+    ], 
     "pos": [
       15, 
       2.26, 
@@ -1905,7 +2710,10 @@
   }, 
   {
     "neighbors": [
-      198
+      184, 
+      196, 
+      198, 
+      209
     ], 
     "pos": [
       15, 
@@ -1916,7 +2724,10 @@
   }, 
   {
     "neighbors": [
-      197
+      185, 
+      197, 
+      199, 
+      210
     ], 
     "pos": [
       15, 
@@ -1926,7 +2737,11 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      186, 
+      198, 
+      211
+    ], 
     "pos": [
       15, 
       2.55, 
@@ -1949,7 +2764,9 @@
   }, 
   {
     "neighbors": [
+      189, 
       200, 
+      202, 
       213
     ], 
     "pos": [
@@ -1960,7 +2777,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      190, 
+      201, 
+      203, 
+      214
+    ], 
     "pos": [
       16, 
       2.3, 
@@ -1969,7 +2791,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      191, 
+      202, 
+      204, 
+      215
+    ], 
     "pos": [
       16, 
       2.11, 
@@ -1978,7 +2805,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      192, 
+      203, 
+      205, 
+      216
+    ], 
     "pos": [
       16, 
       1.88, 
@@ -1987,7 +2819,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      193, 
+      204, 
+      206, 
+      217
+    ], 
     "pos": [
       16, 
       2.09, 
@@ -1996,7 +2833,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      194, 
+      205, 
+      207, 
+      218
+    ], 
     "pos": [
       16, 
       2.13, 
@@ -2005,7 +2847,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      195, 
+      206, 
+      208, 
+      219
+    ], 
     "pos": [
       16, 
       2.22, 
@@ -2014,7 +2861,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      196, 
+      207, 
+      209, 
+      220
+    ], 
     "pos": [
       16, 
       2.3, 
@@ -2023,7 +2875,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      197, 
+      208, 
+      210, 
+      221
+    ], 
     "pos": [
       16, 
       2.05, 
@@ -2032,7 +2889,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      198, 
+      209, 
+      211, 
+      222
+    ], 
     "pos": [
       16, 
       2.43, 
@@ -2041,7 +2903,11 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      199, 
+      210, 
+      223
+    ], 
     "pos": [
       16, 
       2.5, 
@@ -2076,7 +2942,9 @@
   }, 
   {
     "neighbors": [
+      202, 
       213, 
+      215, 
       224
     ], 
     "pos": [
@@ -2087,7 +2955,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      203, 
+      214, 
+      216, 
+      225
+    ], 
     "pos": [
       17, 
       1.96, 
@@ -2096,7 +2969,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      204, 
+      215, 
+      217, 
+      226
+    ], 
     "pos": [
       17, 
       2.06, 
@@ -2105,7 +2983,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      205, 
+      216, 
+      218, 
+      227
+    ], 
     "pos": [
       17, 
       2.18, 
@@ -2114,7 +2997,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      206, 
+      217, 
+      219, 
+      228
+    ], 
     "pos": [
       17, 
       2.19, 
@@ -2123,7 +3011,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      207, 
+      218, 
+      220, 
+      229
+    ], 
     "pos": [
       17, 
       2.32, 
@@ -2132,7 +3025,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      208, 
+      219, 
+      221, 
+      230
+    ], 
     "pos": [
       17, 
       1.99, 
@@ -2141,7 +3039,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      209, 
+      220, 
+      222, 
+      231
+    ], 
     "pos": [
       17, 
       2.12, 
@@ -2151,6 +3054,9 @@
   }, 
   {
     "neighbors": [
+      210, 
+      221, 
+      223, 
       232
     ], 
     "pos": [
@@ -2161,7 +3067,10 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      211, 
+      222
+    ], 
     "pos": [
       17, 
       2.43, 
@@ -2171,7 +3080,9 @@
   }, 
   {
     "neighbors": [
-      214
+      214, 
+      225, 
+      233
     ], 
     "pos": [
       18, 
@@ -2181,7 +3092,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      215, 
+      224, 
+      226, 
+      234
+    ], 
     "pos": [
       18, 
       1.98, 
@@ -2190,7 +3106,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      216, 
+      225, 
+      227, 
+      235
+    ], 
     "pos": [
       18, 
       1.93, 
@@ -2199,7 +3120,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      217, 
+      226, 
+      228, 
+      236
+    ], 
     "pos": [
       18, 
       1.76, 
@@ -2208,7 +3134,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      218, 
+      227, 
+      229, 
+      237
+    ], 
     "pos": [
       18, 
       2.05, 
@@ -2217,7 +3148,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      219, 
+      228, 
+      230, 
+      238
+    ], 
     "pos": [
       18, 
       2.1, 
@@ -2226,7 +3162,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      220, 
+      229, 
+      231, 
+      239
+    ], 
     "pos": [
       18, 
       2.16, 
@@ -2235,7 +3176,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      221, 
+      230, 
+      232, 
+      240
+    ], 
     "pos": [
       18, 
       1.96, 
@@ -2245,7 +3191,9 @@
   }, 
   {
     "neighbors": [
-      222
+      222, 
+      231, 
+      241
     ], 
     "pos": [
       18, 
@@ -2255,7 +3203,11 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      224, 
+      234, 
+      243
+    ], 
     "pos": [
       19, 
       2.45, 
@@ -2264,7 +3216,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      225, 
+      233, 
+      235, 
+      244
+    ], 
     "pos": [
       19, 
       1.97, 
@@ -2273,7 +3230,12 @@
     "type": "PlainsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      226, 
+      234, 
+      236, 
+      245
+    ], 
     "pos": [
       19, 
       1.6, 
@@ -2282,7 +3244,12 @@
     "type": "PlainsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      227, 
+      235, 
+      237, 
+      246
+    ], 
     "pos": [
       19, 
       2.09, 
@@ -2291,7 +3258,12 @@
     "type": "PlainsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      228, 
+      236, 
+      238, 
+      247
+    ], 
     "pos": [
       19, 
       2.25, 
@@ -2300,7 +3272,12 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      229, 
+      237, 
+      239, 
+      248
+    ], 
     "pos": [
       19, 
       2.08, 
@@ -2309,7 +3286,12 @@
     "type": "PlainsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      230, 
+      238, 
+      240, 
+      249
+    ], 
     "pos": [
       19, 
       2.45, 
@@ -2318,7 +3300,12 @@
     "type": "PlainsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      231, 
+      239, 
+      241, 
+      250
+    ], 
     "pos": [
       19, 
       1.84, 
@@ -2327,7 +3314,11 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      232, 
+      240, 
+      251
+    ], 
     "pos": [
       19, 
       2.45, 
@@ -2336,7 +3327,10 @@
     "type": "WoodsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      243, 
+      253
+    ], 
     "pos": [
       20, 
       2.55, 
@@ -2345,7 +3339,12 @@
     "type": "PlainsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      233, 
+      242, 
+      244, 
+      254
+    ], 
     "pos": [
       20, 
       1.97, 
@@ -2354,7 +3353,12 @@
     "type": "PlainsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      234, 
+      243, 
+      245, 
+      255
+    ], 
     "pos": [
       20, 
       1.64, 
@@ -2363,7 +3367,12 @@
     "type": "PlainsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      235, 
+      244, 
+      246, 
+      256
+    ], 
     "pos": [
       20, 
       1.37, 
@@ -2372,7 +3381,12 @@
     "type": "PlainsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      236, 
+      245, 
+      247, 
+      257
+    ], 
     "pos": [
       20, 
       1.53, 
@@ -2381,7 +3395,12 @@
     "type": "PlainsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      237, 
+      246, 
+      248, 
+      258
+    ], 
     "pos": [
       20, 
       1.45, 
@@ -2390,7 +3409,12 @@
     "type": "PlainsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      238, 
+      247, 
+      249, 
+      259
+    ], 
     "pos": [
       20, 
       1.76, 
@@ -2399,7 +3423,12 @@
     "type": "PlainsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      239, 
+      248, 
+      250, 
+      260
+    ], 
     "pos": [
       20, 
       1.59, 
@@ -2408,7 +3437,12 @@
     "type": "PlainsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      240, 
+      249, 
+      251, 
+      261
+    ], 
     "pos": [
       20, 
       1.76, 
@@ -2417,7 +3451,11 @@
     "type": "PlainsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      241, 
+      250, 
+      262
+    ], 
     "pos": [
       20, 
       2.14, 
@@ -2427,6 +3465,7 @@
   }, 
   {
     "neighbors": [
+      253, 
       265
     ], 
     "pos": [
@@ -2437,7 +3476,12 @@
     "type": "PlainsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      242, 
+      252, 
+      254, 
+      266
+    ], 
     "pos": [
       21, 
       2.14, 
@@ -2446,7 +3490,12 @@
     "type": "PlainsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      243, 
+      253, 
+      255, 
+      267
+    ], 
     "pos": [
       21, 
       1.87, 
@@ -2455,7 +3504,12 @@
     "type": "PlainsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      244, 
+      254, 
+      256, 
+      268
+    ], 
     "pos": [
       21, 
       1.53, 
@@ -2464,7 +3518,12 @@
     "type": "PlainsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      245, 
+      255, 
+      257, 
+      269
+    ], 
     "pos": [
       21, 
       1.79, 
@@ -2473,7 +3532,12 @@
     "type": "PlainsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      246, 
+      256, 
+      258, 
+      270
+    ], 
     "pos": [
       21, 
       1.8, 
@@ -2482,7 +3546,12 @@
     "type": "PlainsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      247, 
+      257, 
+      259, 
+      271
+    ], 
     "pos": [
       21, 
       1.84, 
@@ -2491,7 +3560,12 @@
     "type": "PlainsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      248, 
+      258, 
+      260, 
+      272
+    ], 
     "pos": [
       21, 
       1.6, 
@@ -2500,7 +3574,12 @@
     "type": "PlainsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      249, 
+      259, 
+      261, 
+      273
+    ], 
     "pos": [
       21, 
       1.49, 
@@ -2509,7 +3588,12 @@
     "type": "PlainsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      250, 
+      260, 
+      262, 
+      274
+    ], 
     "pos": [
       21, 
       1.53, 
@@ -2518,7 +3602,12 @@
     "type": "PlainsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      251, 
+      261, 
+      263, 
+      275
+    ], 
     "pos": [
       21, 
       2.36, 
@@ -2527,7 +3616,11 @@
     "type": "PlainsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      262, 
+      264, 
+      276
+    ], 
     "pos": [
       21, 
       2.49, 
@@ -2537,6 +3630,7 @@
   }, 
   {
     "neighbors": [
+      263, 
       277
     ], 
     "pos": [
@@ -2548,7 +3642,9 @@
   }, 
   {
     "neighbors": [
-      252
+      252, 
+      266, 
+      278
     ], 
     "pos": [
       22, 
@@ -2558,7 +3654,12 @@
     "type": "PlainsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      253, 
+      265, 
+      267, 
+      279
+    ], 
     "pos": [
       22, 
       1.86, 
@@ -2567,7 +3668,12 @@
     "type": "PlainsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      254, 
+      266, 
+      268, 
+      280
+    ], 
     "pos": [
       22, 
       1.96, 
@@ -2576,7 +3682,12 @@
     "type": "PlainsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      255, 
+      267, 
+      269, 
+      281
+    ], 
     "pos": [
       22, 
       1.79, 
@@ -2585,7 +3696,12 @@
     "type": "StoneTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      256, 
+      268, 
+      270, 
+      282
+    ], 
     "pos": [
       22, 
       2.0, 
@@ -2594,7 +3710,12 @@
     "type": "StoneTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      257, 
+      269, 
+      271, 
+      283
+    ], 
     "pos": [
       22, 
       1.56, 
@@ -2603,7 +3724,12 @@
     "type": "StoneTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      258, 
+      270, 
+      272, 
+      284
+    ], 
     "pos": [
       22, 
       1.81, 
@@ -2612,7 +3738,12 @@
     "type": "StoneTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      259, 
+      271, 
+      273, 
+      285
+    ], 
     "pos": [
       22, 
       1.75, 
@@ -2621,7 +3752,12 @@
     "type": "PlainsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      260, 
+      272, 
+      274, 
+      286
+    ], 
     "pos": [
       22, 
       1.54, 
@@ -2630,7 +3766,12 @@
     "type": "StoneTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      261, 
+      273, 
+      275, 
+      287
+    ], 
     "pos": [
       22, 
       1.34, 
@@ -2639,7 +3780,12 @@
     "type": "PlainsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      262, 
+      274, 
+      276, 
+      288
+    ], 
     "pos": [
       22, 
       2.06, 
@@ -2648,7 +3794,12 @@
     "type": "PlainsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      263, 
+      275, 
+      277, 
+      289
+    ], 
     "pos": [
       22, 
       2.43, 
@@ -2659,6 +3810,7 @@
   {
     "neighbors": [
       264, 
+      276, 
       290
     ], 
     "pos": [
@@ -2669,7 +3821,11 @@
     "type": "PlainsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      265, 
+      279, 
+      292
+    ], 
     "pos": [
       23, 
       2.5, 
@@ -2678,7 +3834,12 @@
     "type": "PlainsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      266, 
+      278, 
+      280, 
+      293
+    ], 
     "pos": [
       23, 
       1.93, 
@@ -2687,7 +3848,12 @@
     "type": "PlainsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      267, 
+      279, 
+      281, 
+      294
+    ], 
     "pos": [
       23, 
       2.18, 
@@ -2696,7 +3862,12 @@
     "type": "StoneTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      268, 
+      280, 
+      282, 
+      295
+    ], 
     "pos": [
       23, 
       1.69, 
@@ -2705,7 +3876,12 @@
     "type": "StoneTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      269, 
+      281, 
+      283, 
+      296
+    ], 
     "pos": [
       23, 
       1.66, 
@@ -2714,7 +3890,12 @@
     "type": "StoneTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      270, 
+      282, 
+      284, 
+      297
+    ], 
     "pos": [
       23, 
       1.4, 
@@ -2723,7 +3904,12 @@
     "type": "StoneTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      271, 
+      283, 
+      285, 
+      298
+    ], 
     "pos": [
       23, 
       1.54, 
@@ -2732,7 +3918,12 @@
     "type": "StoneTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      272, 
+      284, 
+      286, 
+      299
+    ], 
     "pos": [
       23, 
       1.86, 
@@ -2741,7 +3932,12 @@
     "type": "StoneTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      273, 
+      285, 
+      287, 
+      300
+    ], 
     "pos": [
       23, 
       1.44, 
@@ -2750,7 +3946,12 @@
     "type": "StoneTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      274, 
+      286, 
+      288, 
+      301
+    ], 
     "pos": [
       23, 
       1.54, 
@@ -2759,7 +3960,12 @@
     "type": "StoneTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      275, 
+      287, 
+      289, 
+      302
+    ], 
     "pos": [
       23, 
       1.55, 
@@ -2768,7 +3974,12 @@
     "type": "StoneTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      276, 
+      288, 
+      290, 
+      303
+    ], 
     "pos": [
       23, 
       2.36, 
@@ -2779,7 +3990,9 @@
   {
     "neighbors": [
       277, 
-      291
+      289, 
+      291, 
+      304
     ], 
     "pos": [
       23, 
@@ -2801,7 +4014,11 @@
     "type": "PlainsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      278, 
+      293, 
+      306
+    ], 
     "pos": [
       24, 
       2.38, 
@@ -2810,7 +4027,12 @@
     "type": "PlainsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      279, 
+      292, 
+      294, 
+      307
+    ], 
     "pos": [
       24, 
       1.86, 
@@ -2819,7 +4041,12 @@
     "type": "StoneTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      280, 
+      293, 
+      295, 
+      308
+    ], 
     "pos": [
       24, 
       1.84, 
@@ -2828,7 +4055,12 @@
     "type": "StoneTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      281, 
+      294, 
+      296, 
+      309
+    ], 
     "pos": [
       24, 
       1.14, 
@@ -2837,7 +4069,12 @@
     "type": "StoneTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      282, 
+      295, 
+      297, 
+      310
+    ], 
     "pos": [
       24, 
       1.53, 
@@ -2846,7 +4083,12 @@
     "type": "StoneTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      283, 
+      296, 
+      298, 
+      311
+    ], 
     "pos": [
       24, 
       1.49, 
@@ -2855,7 +4097,12 @@
     "type": "StoneTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      284, 
+      297, 
+      299, 
+      312
+    ], 
     "pos": [
       24, 
       1.38, 
@@ -2864,7 +4111,12 @@
     "type": "StoneTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      285, 
+      298, 
+      300, 
+      313
+    ], 
     "pos": [
       24, 
       1.32, 
@@ -2873,7 +4125,12 @@
     "type": "StoneTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      286, 
+      299, 
+      301, 
+      314
+    ], 
     "pos": [
       24, 
       1.36, 
@@ -2882,7 +4139,12 @@
     "type": "StoneTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      287, 
+      300, 
+      302, 
+      315
+    ], 
     "pos": [
       24, 
       1.29, 
@@ -2891,7 +4153,12 @@
     "type": "StoneTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      288, 
+      301, 
+      303, 
+      316
+    ], 
     "pos": [
       24, 
       1.68, 
@@ -2901,6 +4168,9 @@
   }, 
   {
     "neighbors": [
+      289, 
+      302, 
+      304, 
       317
     ], 
     "pos": [
@@ -2911,7 +4181,12 @@
     "type": "PlainsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      290, 
+      303, 
+      305, 
+      318
+    ], 
     "pos": [
       24, 
       2.5, 
@@ -2921,7 +4196,8 @@
   }, 
   {
     "neighbors": [
-      291
+      291, 
+      304
     ], 
     "pos": [
       24, 
@@ -2931,7 +4207,11 @@
     "type": "PlainsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      292, 
+      307, 
+      319
+    ], 
     "pos": [
       25, 
       2.0, 
@@ -2940,7 +4220,12 @@
     "type": "PlainsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      293, 
+      306, 
+      308, 
+      320
+    ], 
     "pos": [
       25, 
       1.92, 
@@ -2949,7 +4234,12 @@
     "type": "PlainsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      294, 
+      307, 
+      309, 
+      321
+    ], 
     "pos": [
       25, 
       1.55, 
@@ -2958,7 +4248,12 @@
     "type": "StoneTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      295, 
+      308, 
+      310, 
+      322
+    ], 
     "pos": [
       25, 
       1.27, 
@@ -2967,7 +4262,12 @@
     "type": "StoneTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      296, 
+      309, 
+      311, 
+      323
+    ], 
     "pos": [
       25, 
       1.55, 
@@ -2976,7 +4276,12 @@
     "type": "StoneTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      297, 
+      310, 
+      312, 
+      324
+    ], 
     "pos": [
       25, 
       1.34, 
@@ -2985,7 +4290,12 @@
     "type": "StoneTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      298, 
+      311, 
+      313, 
+      325
+    ], 
     "pos": [
       25, 
       1.2, 
@@ -2994,7 +4304,12 @@
     "type": "StoneTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      299, 
+      312, 
+      314, 
+      326
+    ], 
     "pos": [
       25, 
       1.16, 
@@ -3003,7 +4318,12 @@
     "type": "StoneTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      300, 
+      313, 
+      315, 
+      327
+    ], 
     "pos": [
       25, 
       1.58, 
@@ -3012,7 +4332,12 @@
     "type": "StoneTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      301, 
+      314, 
+      316, 
+      328
+    ], 
     "pos": [
       25, 
       1.13, 
@@ -3021,7 +4346,12 @@
     "type": "StoneTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      302, 
+      315, 
+      317, 
+      329
+    ], 
     "pos": [
       25, 
       1.47, 
@@ -3032,6 +4362,8 @@
   {
     "neighbors": [
       303, 
+      316, 
+      318, 
       330
     ], 
     "pos": [
@@ -3042,7 +4374,11 @@
     "type": "PlainsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      304, 
+      317, 
+      331
+    ], 
     "pos": [
       25, 
       2.42, 
@@ -3051,7 +4387,11 @@
     "type": "PlainsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      306, 
+      320, 
+      333
+    ], 
     "pos": [
       26, 
       2.29, 
@@ -3060,7 +4400,12 @@
     "type": "PlainsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      307, 
+      319, 
+      321, 
+      334
+    ], 
     "pos": [
       26, 
       1.56, 
@@ -3069,7 +4414,12 @@
     "type": "StoneTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      308, 
+      320, 
+      322, 
+      335
+    ], 
     "pos": [
       26, 
       1.67, 
@@ -3078,7 +4428,12 @@
     "type": "StoneTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      309, 
+      321, 
+      323, 
+      336
+    ], 
     "pos": [
       26, 
       1.74, 
@@ -3087,7 +4442,12 @@
     "type": "StoneTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      310, 
+      322, 
+      324, 
+      337
+    ], 
     "pos": [
       26, 
       1.54, 
@@ -3096,7 +4456,12 @@
     "type": "StoneTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      311, 
+      323, 
+      325, 
+      338
+    ], 
     "pos": [
       26, 
       1.22, 
@@ -3105,7 +4470,12 @@
     "type": "StoneTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      312, 
+      324, 
+      326, 
+      339
+    ], 
     "pos": [
       26, 
       1.33, 
@@ -3114,7 +4484,12 @@
     "type": "StoneTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      313, 
+      325, 
+      327, 
+      340
+    ], 
     "pos": [
       26, 
       1.11, 
@@ -3123,7 +4498,12 @@
     "type": "StoneTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      314, 
+      326, 
+      328, 
+      341
+    ], 
     "pos": [
       26, 
       1.29, 
@@ -3132,7 +4512,12 @@
     "type": "StoneTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      315, 
+      327, 
+      329, 
+      342
+    ], 
     "pos": [
       26, 
       1.27, 
@@ -3141,7 +4526,12 @@
     "type": "StoneTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      316, 
+      328, 
+      330, 
+      343
+    ], 
     "pos": [
       26, 
       1.56, 
@@ -3151,7 +4541,10 @@
   }, 
   {
     "neighbors": [
-      317
+      317, 
+      329, 
+      331, 
+      344
     ], 
     "pos": [
       26, 
@@ -3162,6 +4555,8 @@
   }, 
   {
     "neighbors": [
+      318, 
+      330, 
       345
     ], 
     "pos": [
@@ -3173,6 +4568,7 @@
   }, 
   {
     "neighbors": [
+      333, 
       346
     ], 
     "pos": [
@@ -3183,7 +4579,12 @@
     "type": "PlainsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      319, 
+      332, 
+      334, 
+      347
+    ], 
     "pos": [
       27, 
       2.2, 
@@ -3192,7 +4593,12 @@
     "type": "PlainsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      320, 
+      333, 
+      335, 
+      348
+    ], 
     "pos": [
       27, 
       1.91, 
@@ -3201,7 +4607,12 @@
     "type": "StoneTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      321, 
+      334, 
+      336, 
+      349
+    ], 
     "pos": [
       27, 
       1.72, 
@@ -3210,7 +4621,12 @@
     "type": "StoneTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      322, 
+      335, 
+      337, 
+      350
+    ], 
     "pos": [
       27, 
       1.83, 
@@ -3219,7 +4635,12 @@
     "type": "StoneTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      323, 
+      336, 
+      338, 
+      351
+    ], 
     "pos": [
       27, 
       1.21, 
@@ -3228,7 +4649,12 @@
     "type": "StoneTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      324, 
+      337, 
+      339, 
+      352
+    ], 
     "pos": [
       27, 
       1.4, 
@@ -3237,7 +4663,12 @@
     "type": "StoneTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      325, 
+      338, 
+      340, 
+      353
+    ], 
     "pos": [
       27, 
       1.67, 
@@ -3246,7 +4677,12 @@
     "type": "StoneTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      326, 
+      339, 
+      341, 
+      354
+    ], 
     "pos": [
       27, 
       1.42, 
@@ -3255,7 +4691,12 @@
     "type": "StoneTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      327, 
+      340, 
+      342, 
+      355
+    ], 
     "pos": [
       27, 
       1.39, 
@@ -3264,7 +4705,12 @@
     "type": "StoneTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      328, 
+      341, 
+      343, 
+      356
+    ], 
     "pos": [
       27, 
       1.6, 
@@ -3273,7 +4719,12 @@
     "type": "StoneTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      329, 
+      342, 
+      344, 
+      357
+    ], 
     "pos": [
       27, 
       1.9, 
@@ -3282,7 +4733,12 @@
     "type": "PlainsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      330, 
+      343, 
+      345, 
+      358
+    ], 
     "pos": [
       27, 
       2.31, 
@@ -3293,6 +4749,7 @@
   {
     "neighbors": [
       331, 
+      344, 
       359
     ], 
     "pos": [
@@ -3317,7 +4774,9 @@
   }, 
   {
     "neighbors": [
+      333, 
       346, 
+      348, 
       361
     ], 
     "pos": [
@@ -3328,7 +4787,12 @@
     "type": "PlainsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      334, 
+      347, 
+      349, 
+      362
+    ], 
     "pos": [
       28, 
       2.0, 
@@ -3337,7 +4801,12 @@
     "type": "PlainsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      335, 
+      348, 
+      350, 
+      363
+    ], 
     "pos": [
       28, 
       1.92, 
@@ -3346,7 +4815,12 @@
     "type": "StoneTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      336, 
+      349, 
+      351, 
+      364
+    ], 
     "pos": [
       28, 
       1.68, 
@@ -3355,7 +4829,12 @@
     "type": "StoneTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      337, 
+      350, 
+      352, 
+      365
+    ], 
     "pos": [
       28, 
       1.58, 
@@ -3364,7 +4843,12 @@
     "type": "StoneTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      338, 
+      351, 
+      353, 
+      366
+    ], 
     "pos": [
       28, 
       1.69, 
@@ -3373,7 +4857,12 @@
     "type": "StoneTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      339, 
+      352, 
+      354, 
+      367
+    ], 
     "pos": [
       28, 
       1.4, 
@@ -3382,7 +4871,12 @@
     "type": "StoneTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      340, 
+      353, 
+      355, 
+      368
+    ], 
     "pos": [
       28, 
       1.26, 
@@ -3391,7 +4885,12 @@
     "type": "StoneTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      341, 
+      354, 
+      356, 
+      369
+    ], 
     "pos": [
       28, 
       1.56, 
@@ -3400,7 +4899,12 @@
     "type": "StoneTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      342, 
+      355, 
+      357, 
+      370
+    ], 
     "pos": [
       28, 
       2.07, 
@@ -3409,7 +4913,12 @@
     "type": "StoneTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      343, 
+      356, 
+      358, 
+      371
+    ], 
     "pos": [
       28, 
       2.3, 
@@ -3419,7 +4928,10 @@
   }, 
   {
     "neighbors": [
-      359
+      344, 
+      357, 
+      359, 
+      372
     ], 
     "pos": [
       28, 
@@ -3468,7 +4980,9 @@
   }, 
   {
     "neighbors": [
+      348, 
       361, 
+      363, 
       374
     ], 
     "pos": [
@@ -3479,7 +4993,12 @@
     "type": "PlainsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      349, 
+      362, 
+      364, 
+      375
+    ], 
     "pos": [
       29, 
       2.25, 
@@ -3488,7 +5007,12 @@
     "type": "StoneTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      350, 
+      363, 
+      365, 
+      376
+    ], 
     "pos": [
       29, 
       2.15, 
@@ -3497,7 +5021,12 @@
     "type": "StoneTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      351, 
+      364, 
+      366, 
+      377
+    ], 
     "pos": [
       29, 
       1.85, 
@@ -3506,7 +5035,12 @@
     "type": "StoneTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      352, 
+      365, 
+      367, 
+      378
+    ], 
     "pos": [
       29, 
       1.83, 
@@ -3515,7 +5049,12 @@
     "type": "StoneTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      353, 
+      366, 
+      368, 
+      379
+    ], 
     "pos": [
       29, 
       2.05, 
@@ -3524,7 +5063,12 @@
     "type": "StoneTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      354, 
+      367, 
+      369, 
+      380
+    ], 
     "pos": [
       29, 
       1.73, 
@@ -3533,7 +5077,12 @@
     "type": "StoneTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      355, 
+      368, 
+      370, 
+      381
+    ], 
     "pos": [
       29, 
       1.94, 
@@ -3542,7 +5091,12 @@
     "type": "StoneTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      356, 
+      369, 
+      371, 
+      382
+    ], 
     "pos": [
       29, 
       2.44, 
@@ -3551,7 +5105,11 @@
     "type": "PlainsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      357, 
+      370, 
+      372
+    ], 
     "pos": [
       29, 
       2.5, 
@@ -3560,7 +5118,10 @@
     "type": "PlainsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      358, 
+      371
+    ], 
     "pos": [
       29, 
       2.35, 
@@ -3595,6 +5156,7 @@
   }, 
   {
     "neighbors": [
+      363, 
       374, 
       376, 
       383
@@ -3608,7 +5170,9 @@
   }, 
   {
     "neighbors": [
+      364, 
       375, 
+      377, 
       384
     ], 
     "pos": [
@@ -3619,7 +5183,12 @@
     "type": "PlainsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      365, 
+      376, 
+      378, 
+      385
+    ], 
     "pos": [
       30, 
       2.31, 
@@ -3628,7 +5197,12 @@
     "type": "PlainsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      366, 
+      377, 
+      379, 
+      386
+    ], 
     "pos": [
       30, 
       2.12, 
@@ -3637,7 +5211,12 @@
     "type": "StoneTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      367, 
+      378, 
+      380, 
+      387
+    ], 
     "pos": [
       30, 
       2.36, 
@@ -3646,7 +5225,12 @@
     "type": "PlainsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      368, 
+      379, 
+      381, 
+      388
+    ], 
     "pos": [
       30, 
       2.29, 
@@ -3655,7 +5239,12 @@
     "type": "PlainsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      369, 
+      380, 
+      382, 
+      389
+    ], 
     "pos": [
       30, 
       2.16, 
@@ -3664,7 +5253,11 @@
     "type": "PlainsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      370, 
+      381, 
+      390
+    ], 
     "pos": [
       30, 
       2.5, 
@@ -3699,7 +5292,9 @@
   }, 
   {
     "neighbors": [
-      384
+      377, 
+      384, 
+      386
     ], 
     "pos": [
       31, 
@@ -3709,7 +5304,11 @@
     "type": "PlainsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      378, 
+      385, 
+      387
+    ], 
     "pos": [
       31, 
       2.43, 
@@ -3718,7 +5317,11 @@
     "type": "PlainsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      379, 
+      386, 
+      388
+    ], 
     "pos": [
       31, 
       2.24, 
@@ -3727,7 +5330,11 @@
     "type": "PlainsTile"
   }, 
   {
-    "neighbors": [], 
+    "neighbors": [
+      380, 
+      387, 
+      389
+    ], 
     "pos": [
       31, 
       2.12, 
@@ -3737,6 +5344,8 @@
   }, 
   {
     "neighbors": [
+      381, 
+      388, 
       390
     ], 
     "pos": [
@@ -3748,6 +5357,7 @@
   }, 
   {
     "neighbors": [
+      382, 
       389
     ], 
     "pos": [
