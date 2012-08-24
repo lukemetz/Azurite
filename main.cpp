@@ -35,7 +35,7 @@
 #include "Systems/TargetedRangedAttackSelectorSystem.h"
 
 #include <stdlib.h>
-
+#include <string.h>
 static double t0;
 static Application *app;
 
@@ -92,71 +92,82 @@ void engineInit() {
     wrapManager->loadEntity(entitySystem, value);
   }
 
-  int size = 10;
+  json_t *level = json_load_file("Content/levels/level.json", 0, &error);
+  if (level == NULL) {
+    printf("Error In loading level");
+  }
 
-  std::vector<std::vector<Entity *> > entities;
-  for(int i=0; i < size; i++) {
-    entities.push_back(std::vector<Entity *>());
-    for(int j=0; j < size; j++) {
-      Entity *tile = new Entity;
-      entities[i].push_back(tile);
-      entitySystem->createComponent<Mesh>(tile);
-      entitySystem->createComponent<Transform>(tile);
-      entitySystem->createComponent<Tile>(tile);
-      entitySystem->createComponent<TileSelected>(tile);
-      int w = 3*i-j*i+3*(j+1);
-      if(w < 5) {
-        entitySystem->createComponent<StoneTile>(tile);
-      } else if(w < 10) {
-        entitySystem->createComponent<PlainsTile>(tile);
-      } else {
-        entitySystem->createComponent<WoodsTile>(tile);
+  std::vector<Entity *> entities;
+  int numTiles = json_array_size(level);
+  for (int i=0; i < numTiles; ++i) {
+    json_t *jsonTile = json_array_get(level, i);
+    Entity *tile = new Entity;
+    entities.push_back(tile);
+    entitySystem->createComponent<Mesh>(tile);
+    Transform * t = entitySystem->createComponent<Transform>(tile);
+    entitySystem->createComponent<Tile>(tile);
+    entitySystem->createComponent<TileSelected>(tile);
+
+    json_object_foreach(jsonTile, key, value) {
+      if(strcmp(key, "type") == 0) {
+        const char * type = json_string_value(value);
+        if (strcmp(type, "StoneTile") == 0) {
+          entitySystem->createComponent<StoneTile>(tile);
+        }
+
+        if (strcmp(type, "WoodsTile") == 0) {
+          entitySystem->createComponent<WoodsTile>(tile);
+        }
+
+        if (strcmp(type, "PlainsTile") == 0) {
+          entitySystem->createComponent<PlainsTile>(tile);
+        }
+      } else if(strcmp(key, "pos") == 0) {
+        json_t *comp = json_array_get(value, 0);
+        t->pos.x = json_number_value(comp);
+        comp = json_array_get(value, 1);
+        t->pos.y = json_number_value(comp);
+        comp = json_array_get(value, 2);
+        t->pos.z = json_number_value(comp);
+        printf("%s \n", t->description().c_str());
       }
-      tile->getAs<Transform>()->pos = Vec3f(i, (float)rand()/RAND_MAX/4.0f, j);
     }
   }
 
-  for(int i=0; i < size; i++) {
-    for(int j=0; j < size; j++){
-      Tile* tc = entities[i][j]->getAs<Tile>();
-      if(j>0) {
-        tc->neighbors.push_back(entities[i][j-1]);
-      } else {
-        tc->neighbors.push_back(NULL);
-      }
-      if(i>0) {
-        tc->neighbors.push_back(entities[i-1][j]);
-      } else {
-        tc->neighbors.push_back(NULL);
-      }
-      if(j<size-1) {
-        tc->neighbors.push_back(entities[i][j+1]);
-      } else {
-        tc->neighbors.push_back(NULL);
-      }
-      if(i<size-1) {
-        tc->neighbors.push_back(entities[i+1][j]);
-      } else {
-        tc->neighbors.push_back(NULL);
+  for (int i=0; i < numTiles; ++i) {
+    Tile * tile = entities[i]->getAs<Tile>();
+    json_t *jsonTile = json_array_get(level, i);
+
+    json_object_foreach(jsonTile, key, value) {
+      if(strcmp(key, "neighbors") == 0) {
+        int size = json_array_size(value);
+        for(int j=0; j < size; ++j) {
+          json_t *v = json_array_get(value, j);
+          int value = json_integer_value(v);
+          tile->neighbors.push_back(entities[value]);
+        }
+        printf("%d \n" ,tile->neighbors.size());
       }
     }
   }
+
   //Add the player
   Entity * playerEntity = new Entity();
   entitySystem->createComponent<Input>(playerEntity);
   entitySystem->createComponent<SelectedEntity>(playerEntity);
   entitySystem->createComponent<PlayerState>(playerEntity);
 
-  //Throw a dude on the field
+  //Throw a dude on the fiel
   Entity *en = createEntity();
-  en->getAs<TileObject>()->tile = entities[5][5];
-  en->getAs<Transform>()->pos = entities[5][5]->getAs<Transform>()->pos;
+  en->getAs<TileObject>()->tile = entities[20];
+  en->getAs<Transform>()->pos = entities[20]->getAs<Transform>()->pos;
   entitySystem->createComponent<PlayerControlled>(en);
 
   en = createEntity();
-  en->getAs<TileObject>()->tile = entities[2][5];
-  en->getAs<Transform>()->pos = entities[2][5]->getAs<Transform>()->pos;
-  entitySystem->createComponent<ComputerControlled>(en);
+  en->getAs<TileObject>()->tile = entities[25];
+  en->getAs<Transform>()->pos = entities[25]->getAs<Transform>()->pos;
+  //entitySystem->createComponent<ComputerControlled>(en);
+  entitySystem->createComponent<PlayerControlled>(en);
 
   //Init systems
   entitySystem->addSystem<RenderSystem>();
