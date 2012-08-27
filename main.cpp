@@ -92,10 +92,7 @@ void engineInit() {
     wrapManager->loadEntity(entitySystem, value);
   }
 
-  json_t *level = json_load_file("Content/levels/level.json", 0, &error);
-  if (level == NULL) {
-    printf("Error In loading level");
-  }
+  json_t *level = json_load_file("Content/levels/small/level.json", 0, &error);
 
   std::vector<Entity *> entities;
   int numTiles = json_array_size(level);
@@ -143,7 +140,6 @@ void engineInit() {
           int value = json_integer_value(v);
           tile->neighbors.push_back(entities[value]);
         }
-        printf("%d \n" ,tile->neighbors.size());
       }
     }
   }
@@ -154,17 +150,20 @@ void engineInit() {
   entitySystem->createComponent<SelectedEntity>(playerEntity);
   entitySystem->createComponent<PlayerState>(playerEntity);
 
-  //Throw a dude on the fiel
-  Entity *en = createEntity();
-  en->getAs<TileObject>()->tile = entities[20];
-  en->getAs<Transform>()->pos = entities[20]->getAs<Transform>()->pos;
-  entitySystem->createComponent<PlayerControlled>(en);
+  //put units on the field
 
-  en = createEntity();
-  en->getAs<TileObject>()->tile = entities[25];
-  en->getAs<Transform>()->pos = entities[25]->getAs<Transform>()->pos;
-  //entitySystem->createComponent<ComputerControlled>(en);
-  entitySystem->createComponent<PlayerControlled>(en);
+
+  json_t *units = json_load_file("Content/levels/small/units.json", 0, &error);
+
+  int numUnits = json_array_size(units);
+  for (int i=0; i < numUnits; ++i) {
+    json_t *jsonUnit = json_array_get(units, i);
+    int tile = json_integer_value(json_object_get(jsonUnit, "tile"));
+    Entity *en = createEntity();
+    en->getAs<TileObject>()->tile = entities[tile];
+    en->getAs<Transform>()->pos = entities[tile]->getAs<Transform>()->pos;
+    entitySystem->createComponent<PlayerControlled>(en);
+  }
 
   //Init systems
   entitySystem->addSystem<RenderSystem>();
