@@ -1,0 +1,1250 @@
+[
+  {
+    "neighbors": [
+      1, 
+      11
+    ], 
+    "pos": [
+      0, 
+      0.25, 
+      1
+    ], 
+    "type": "StoneTile"
+  }, 
+  {
+    "neighbors": [
+      0, 
+      2, 
+      12
+    ], 
+    "pos": [
+      0, 
+      0.0, 
+      2
+    ], 
+    "type": "StoneTile"
+  }, 
+  {
+    "neighbors": [
+      1, 
+      3, 
+      13
+    ], 
+    "pos": [
+      0, 
+      0.0, 
+      3
+    ], 
+    "type": "StoneTile"
+  }, 
+  {
+    "neighbors": [
+      2, 
+      4, 
+      14
+    ], 
+    "pos": [
+      0, 
+      0.0, 
+      4
+    ], 
+    "type": "StoneTile"
+  }, 
+  {
+    "neighbors": [
+      3, 
+      5, 
+      15
+    ], 
+    "pos": [
+      0, 
+      0.0, 
+      5
+    ], 
+    "type": "StoneTile"
+  }, 
+  {
+    "neighbors": [
+      4, 
+      6, 
+      16
+    ], 
+    "pos": [
+      0, 
+      0.25, 
+      6
+    ], 
+    "type": "StoneTile"
+  }, 
+  {
+    "neighbors": [
+      5, 
+      7, 
+      17
+    ], 
+    "pos": [
+      0, 
+      0.25, 
+      7
+    ], 
+    "type": "StoneTile"
+  }, 
+  {
+    "neighbors": [
+      6, 
+      8, 
+      18
+    ], 
+    "pos": [
+      0, 
+      0.25, 
+      8
+    ], 
+    "type": "StoneTile"
+  }, 
+  {
+    "neighbors": [
+      7, 
+      9, 
+      19
+    ], 
+    "pos": [
+      0, 
+      0.25, 
+      9
+    ], 
+    "type": "StoneTile"
+  }, 
+  {
+    "neighbors": [
+      8, 
+      20
+    ], 
+    "pos": [
+      0, 
+      0.0, 
+      10
+    ], 
+    "type": "StoneTile"
+  }, 
+  {
+    "neighbors": [
+      11, 
+      22
+    ], 
+    "pos": [
+      1, 
+      0.25, 
+      0
+    ], 
+    "type": "StoneTile"
+  }, 
+  {
+    "neighbors": [
+      0, 
+      10, 
+      12, 
+      23
+    ], 
+    "pos": [
+      1, 
+      0.0, 
+      1
+    ], 
+    "type": "StoneTile"
+  }, 
+  {
+    "neighbors": [
+      1, 
+      11, 
+      13, 
+      24
+    ], 
+    "pos": [
+      1, 
+      0.0, 
+      2
+    ], 
+    "type": "StoneTile"
+  }, 
+  {
+    "neighbors": [
+      2, 
+      12, 
+      14, 
+      25
+    ], 
+    "pos": [
+      1, 
+      0.0, 
+      3
+    ], 
+    "type": "WoodsTile"
+  }, 
+  {
+    "neighbors": [
+      3, 
+      13, 
+      15, 
+      26
+    ], 
+    "pos": [
+      1, 
+      0.0, 
+      4
+    ], 
+    "type": "WoodsTile"
+  }, 
+  {
+    "neighbors": [
+      4, 
+      14, 
+      16, 
+      27
+    ], 
+    "pos": [
+      1, 
+      0.0, 
+      5
+    ], 
+    "type": "StoneTile"
+  }, 
+  {
+    "neighbors": [
+      5, 
+      15, 
+      17, 
+      28
+    ], 
+    "pos": [
+      1, 
+      0.0, 
+      6
+    ], 
+    "type": "StoneTile"
+  }, 
+  {
+    "neighbors": [
+      6, 
+      16, 
+      18, 
+      29
+    ], 
+    "pos": [
+      1, 
+      0.0, 
+      7
+    ], 
+    "type": "StoneTile"
+  }, 
+  {
+    "neighbors": [
+      7, 
+      17, 
+      19, 
+      30
+    ], 
+    "pos": [
+      1, 
+      0.0, 
+      8
+    ], 
+    "type": "StoneTile"
+  }, 
+  {
+    "neighbors": [
+      8, 
+      18, 
+      20, 
+      31
+    ], 
+    "pos": [
+      1, 
+      0.0, 
+      9
+    ], 
+    "type": "StoneTile"
+  }, 
+  {
+    "neighbors": [
+      9, 
+      19, 
+      21, 
+      32
+    ], 
+    "pos": [
+      1, 
+      0.0, 
+      10
+    ], 
+    "type": "StoneTile"
+  }, 
+  {
+    "neighbors": [
+      20, 
+      33
+    ], 
+    "pos": [
+      1, 
+      0.0, 
+      11
+    ], 
+    "type": "StoneTile"
+  }, 
+  {
+    "neighbors": [
+      10, 
+      23, 
+      34
+    ], 
+    "pos": [
+      2, 
+      0.0, 
+      0
+    ], 
+    "type": "StoneTile"
+  }, 
+  {
+    "neighbors": [
+      11, 
+      22, 
+      24, 
+      35
+    ], 
+    "pos": [
+      2, 
+      0.0, 
+      1
+    ], 
+    "type": "StoneTile"
+  }, 
+  {
+    "neighbors": [
+      12, 
+      23, 
+      25, 
+      36
+    ], 
+    "pos": [
+      2, 
+      0.0, 
+      2
+    ], 
+    "type": "WoodsTile"
+  }, 
+  {
+    "neighbors": [
+      13, 
+      24, 
+      26, 
+      37
+    ], 
+    "pos": [
+      2, 
+      0.25, 
+      3
+    ], 
+    "type": "WoodsTile"
+  }, 
+  {
+    "neighbors": [
+      14, 
+      25, 
+      27, 
+      38
+    ], 
+    "pos": [
+      2, 
+      0.25, 
+      4
+    ], 
+    "type": "WoodsTile"
+  }, 
+  {
+    "neighbors": [
+      15, 
+      26, 
+      28, 
+      39
+    ], 
+    "pos": [
+      2, 
+      0.0, 
+      5
+    ], 
+    "type": "WoodsTile"
+  }, 
+  {
+    "neighbors": [
+      16, 
+      27, 
+      29, 
+      40
+    ], 
+    "pos": [
+      2, 
+      0.0, 
+      6
+    ], 
+    "type": "StoneTile"
+  }, 
+  {
+    "neighbors": [
+      17, 
+      28, 
+      30, 
+      41
+    ], 
+    "pos": [
+      2, 
+      0.0, 
+      7
+    ], 
+    "type": "StoneTile"
+  }, 
+  {
+    "neighbors": [
+      18, 
+      29, 
+      31, 
+      42
+    ], 
+    "pos": [
+      2, 
+      0.69, 
+      8
+    ], 
+    "type": "PlainsTile"
+  }, 
+  {
+    "neighbors": [
+      19, 
+      30, 
+      32, 
+      43
+    ], 
+    "pos": [
+      2, 
+      0.0, 
+      9
+    ], 
+    "type": "StoneTile"
+  }, 
+  {
+    "neighbors": [
+      20, 
+      31, 
+      33, 
+      44
+    ], 
+    "pos": [
+      2, 
+      0.48, 
+      10
+    ], 
+    "type": "PlainsTile"
+  }, 
+  {
+    "neighbors": [
+      21, 
+      32, 
+      45
+    ], 
+    "pos": [
+      2, 
+      0.0, 
+      11
+    ], 
+    "type": "StoneTile"
+  }, 
+  {
+    "neighbors": [
+      22, 
+      35, 
+      46
+    ], 
+    "pos": [
+      3, 
+      0.0, 
+      0
+    ], 
+    "type": "StoneTile"
+  }, 
+  {
+    "neighbors": [
+      23, 
+      34, 
+      36, 
+      47
+    ], 
+    "pos": [
+      3, 
+      0.0, 
+      1
+    ], 
+    "type": "WoodsTile"
+  }, 
+  {
+    "neighbors": [
+      24, 
+      35, 
+      37, 
+      48
+    ], 
+    "pos": [
+      3, 
+      0.25, 
+      2
+    ], 
+    "type": "WoodsTile"
+  }, 
+  {
+    "neighbors": [
+      25, 
+      36, 
+      38, 
+      49
+    ], 
+    "pos": [
+      3, 
+      0.48, 
+      3
+    ], 
+    "type": "WoodsTile"
+  }, 
+  {
+    "neighbors": [
+      26, 
+      37, 
+      39, 
+      50
+    ], 
+    "pos": [
+      3, 
+      0.48, 
+      4
+    ], 
+    "type": "WoodsTile"
+  }, 
+  {
+    "neighbors": [
+      27, 
+      38, 
+      40, 
+      51
+    ], 
+    "pos": [
+      3, 
+      0.25, 
+      5
+    ], 
+    "type": "WoodsTile"
+  }, 
+  {
+    "neighbors": [
+      28, 
+      39, 
+      41, 
+      52
+    ], 
+    "pos": [
+      3, 
+      0.0, 
+      6
+    ], 
+    "type": "WoodsTile"
+  }, 
+  {
+    "neighbors": [
+      29, 
+      40, 
+      42, 
+      53
+    ], 
+    "pos": [
+      3, 
+      0.0, 
+      7
+    ], 
+    "type": "StoneTile"
+  }, 
+  {
+    "neighbors": [
+      30, 
+      41, 
+      43, 
+      54
+    ], 
+    "pos": [
+      3, 
+      0.69, 
+      8
+    ], 
+    "type": "PlainsTile"
+  }, 
+  {
+    "neighbors": [
+      31, 
+      42, 
+      44, 
+      55
+    ], 
+    "pos": [
+      3, 
+      0.0, 
+      9
+    ], 
+    "type": "StoneTile"
+  }, 
+  {
+    "neighbors": [
+      32, 
+      43, 
+      45, 
+      56
+    ], 
+    "pos": [
+      3, 
+      0.48, 
+      10
+    ], 
+    "type": "PlainsTile"
+  }, 
+  {
+    "neighbors": [
+      33, 
+      44, 
+      57
+    ], 
+    "pos": [
+      3, 
+      0.0, 
+      11
+    ], 
+    "type": "StoneTile"
+  }, 
+  {
+    "neighbors": [
+      34, 
+      47, 
+      58
+    ], 
+    "pos": [
+      4, 
+      0.0, 
+      0
+    ], 
+    "type": "StoneTile"
+  }, 
+  {
+    "neighbors": [
+      35, 
+      46, 
+      48, 
+      59
+    ], 
+    "pos": [
+      4, 
+      0.0, 
+      1
+    ], 
+    "type": "WoodsTile"
+  }, 
+  {
+    "neighbors": [
+      36, 
+      47, 
+      49, 
+      60
+    ], 
+    "pos": [
+      4, 
+      0.25, 
+      2
+    ], 
+    "type": "WoodsTile"
+  }, 
+  {
+    "neighbors": [
+      37, 
+      48, 
+      50, 
+      61
+    ], 
+    "pos": [
+      4, 
+      0.48, 
+      3
+    ], 
+    "type": "WoodsTile"
+  }, 
+  {
+    "neighbors": [
+      38, 
+      49, 
+      51, 
+      62
+    ], 
+    "pos": [
+      4, 
+      0.48, 
+      4
+    ], 
+    "type": "WoodsTile"
+  }, 
+  {
+    "neighbors": [
+      39, 
+      50, 
+      52, 
+      63
+    ], 
+    "pos": [
+      4, 
+      0.25, 
+      5
+    ], 
+    "type": "WoodsTile"
+  }, 
+  {
+    "neighbors": [
+      40, 
+      51, 
+      53, 
+      64
+    ], 
+    "pos": [
+      4, 
+      0.0, 
+      6
+    ], 
+    "type": "WoodsTile"
+  }, 
+  {
+    "neighbors": [
+      41, 
+      52, 
+      54, 
+      65
+    ], 
+    "pos": [
+      4, 
+      0.0, 
+      7
+    ], 
+    "type": "StoneTile"
+  }, 
+  {
+    "neighbors": [
+      42, 
+      53, 
+      55, 
+      66
+    ], 
+    "pos": [
+      4, 
+      0.69, 
+      8
+    ], 
+    "type": "PlainsTile"
+  }, 
+  {
+    "neighbors": [
+      43, 
+      54, 
+      56, 
+      67
+    ], 
+    "pos": [
+      4, 
+      0.0, 
+      9
+    ], 
+    "type": "StoneTile"
+  }, 
+  {
+    "neighbors": [
+      44, 
+      55, 
+      57, 
+      68
+    ], 
+    "pos": [
+      4, 
+      0.48, 
+      10
+    ], 
+    "type": "PlainsTile"
+  }, 
+  {
+    "neighbors": [
+      45, 
+      56, 
+      69
+    ], 
+    "pos": [
+      4, 
+      0.0, 
+      11
+    ], 
+    "type": "StoneTile"
+  }, 
+  {
+    "neighbors": [
+      46, 
+      59, 
+      70
+    ], 
+    "pos": [
+      5, 
+      0.0, 
+      0
+    ], 
+    "type": "StoneTile"
+  }, 
+  {
+    "neighbors": [
+      47, 
+      58, 
+      60, 
+      71
+    ], 
+    "pos": [
+      5, 
+      0.0, 
+      1
+    ], 
+    "type": "StoneTile"
+  }, 
+  {
+    "neighbors": [
+      48, 
+      59, 
+      61, 
+      72
+    ], 
+    "pos": [
+      5, 
+      0.0, 
+      2
+    ], 
+    "type": "WoodsTile"
+  }, 
+  {
+    "neighbors": [
+      49, 
+      60, 
+      62, 
+      73
+    ], 
+    "pos": [
+      5, 
+      0.25, 
+      3
+    ], 
+    "type": "WoodsTile"
+  }, 
+  {
+    "neighbors": [
+      50, 
+      61, 
+      63, 
+      74
+    ], 
+    "pos": [
+      5, 
+      0.25, 
+      4
+    ], 
+    "type": "WoodsTile"
+  }, 
+  {
+    "neighbors": [
+      51, 
+      62, 
+      64, 
+      75
+    ], 
+    "pos": [
+      5, 
+      0.0, 
+      5
+    ], 
+    "type": "WoodsTile"
+  }, 
+  {
+    "neighbors": [
+      52, 
+      63, 
+      65, 
+      76
+    ], 
+    "pos": [
+      5, 
+      0.0, 
+      6
+    ], 
+    "type": "StoneTile"
+  }, 
+  {
+    "neighbors": [
+      53, 
+      64, 
+      66, 
+      77
+    ], 
+    "pos": [
+      5, 
+      0.0, 
+      7
+    ], 
+    "type": "StoneTile"
+  }, 
+  {
+    "neighbors": [
+      54, 
+      65, 
+      67, 
+      78
+    ], 
+    "pos": [
+      5, 
+      0.69, 
+      8
+    ], 
+    "type": "PlainsTile"
+  }, 
+  {
+    "neighbors": [
+      55, 
+      66, 
+      68, 
+      79
+    ], 
+    "pos": [
+      5, 
+      0.0, 
+      9
+    ], 
+    "type": "StoneTile"
+  }, 
+  {
+    "neighbors": [
+      56, 
+      67, 
+      69, 
+      80
+    ], 
+    "pos": [
+      5, 
+      0.48, 
+      10
+    ], 
+    "type": "PlainsTile"
+  }, 
+  {
+    "neighbors": [
+      57, 
+      68, 
+      81
+    ], 
+    "pos": [
+      5, 
+      0.0, 
+      11
+    ], 
+    "type": "StoneTile"
+  }, 
+  {
+    "neighbors": [
+      58, 
+      71
+    ], 
+    "pos": [
+      6, 
+      0.25, 
+      0
+    ], 
+    "type": "StoneTile"
+  }, 
+  {
+    "neighbors": [
+      59, 
+      70, 
+      72, 
+      82
+    ], 
+    "pos": [
+      6, 
+      0.0, 
+      1
+    ], 
+    "type": "StoneTile"
+  }, 
+  {
+    "neighbors": [
+      60, 
+      71, 
+      73, 
+      83
+    ], 
+    "pos": [
+      6, 
+      0.0, 
+      2
+    ], 
+    "type": "StoneTile"
+  }, 
+  {
+    "neighbors": [
+      61, 
+      72, 
+      74, 
+      84
+    ], 
+    "pos": [
+      6, 
+      0.0, 
+      3
+    ], 
+    "type": "WoodsTile"
+  }, 
+  {
+    "neighbors": [
+      62, 
+      73, 
+      75, 
+      85
+    ], 
+    "pos": [
+      6, 
+      0.0, 
+      4
+    ], 
+    "type": "WoodsTile"
+  }, 
+  {
+    "neighbors": [
+      63, 
+      74, 
+      76, 
+      86
+    ], 
+    "pos": [
+      6, 
+      0.0, 
+      5
+    ], 
+    "type": "StoneTile"
+  }, 
+  {
+    "neighbors": [
+      64, 
+      75, 
+      77, 
+      87
+    ], 
+    "pos": [
+      6, 
+      0.0, 
+      6
+    ], 
+    "type": "StoneTile"
+  }, 
+  {
+    "neighbors": [
+      65, 
+      76, 
+      78, 
+      88
+    ], 
+    "pos": [
+      6, 
+      0.0, 
+      7
+    ], 
+    "type": "StoneTile"
+  }, 
+  {
+    "neighbors": [
+      66, 
+      77, 
+      79, 
+      89
+    ], 
+    "pos": [
+      6, 
+      0.0, 
+      8
+    ], 
+    "type": "StoneTile"
+  }, 
+  {
+    "neighbors": [
+      67, 
+      78, 
+      80, 
+      90
+    ], 
+    "pos": [
+      6, 
+      0.0, 
+      9
+    ], 
+    "type": "StoneTile"
+  }, 
+  {
+    "neighbors": [
+      68, 
+      79, 
+      81, 
+      91
+    ], 
+    "pos": [
+      6, 
+      0.0, 
+      10
+    ], 
+    "type": "StoneTile"
+  }, 
+  {
+    "neighbors": [
+      69, 
+      80
+    ], 
+    "pos": [
+      6, 
+      0.0, 
+      11
+    ], 
+    "type": "StoneTile"
+  }, 
+  {
+    "neighbors": [
+      71, 
+      83
+    ], 
+    "pos": [
+      7, 
+      0.25, 
+      1
+    ], 
+    "type": "StoneTile"
+  }, 
+  {
+    "neighbors": [
+      72, 
+      82, 
+      84
+    ], 
+    "pos": [
+      7, 
+      0.0, 
+      2
+    ], 
+    "type": "StoneTile"
+  }, 
+  {
+    "neighbors": [
+      73, 
+      83, 
+      85
+    ], 
+    "pos": [
+      7, 
+      0.0, 
+      3
+    ], 
+    "type": "StoneTile"
+  }, 
+  {
+    "neighbors": [
+      74, 
+      84, 
+      86
+    ], 
+    "pos": [
+      7, 
+      0.0, 
+      4
+    ], 
+    "type": "StoneTile"
+  }, 
+  {
+    "neighbors": [
+      75, 
+      85, 
+      87
+    ], 
+    "pos": [
+      7, 
+      0.0, 
+      5
+    ], 
+    "type": "StoneTile"
+  }, 
+  {
+    "neighbors": [
+      76, 
+      86, 
+      88
+    ], 
+    "pos": [
+      7, 
+      0.25, 
+      6
+    ], 
+    "type": "StoneTile"
+  }, 
+  {
+    "neighbors": [
+      77, 
+      87, 
+      89
+    ], 
+    "pos": [
+      7, 
+      0.25, 
+      7
+    ], 
+    "type": "StoneTile"
+  }, 
+  {
+    "neighbors": [
+      78, 
+      88, 
+      90
+    ], 
+    "pos": [
+      7, 
+      0.25, 
+      8
+    ], 
+    "type": "StoneTile"
+  }, 
+  {
+    "neighbors": [
+      79, 
+      89, 
+      91
+    ], 
+    "pos": [
+      7, 
+      0.25, 
+      9
+    ], 
+    "type": "StoneTile"
+  }, 
+  {
+    "neighbors": [
+      80, 
+      90
+    ], 
+    "pos": [
+      7, 
+      0.0, 
+      10
+    ], 
+    "type": "StoneTile"
+  }
+]
